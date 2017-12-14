@@ -96,20 +96,20 @@ WSGI_APPLICATION = 'acuerdos_main.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
+DATABASESx = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
-DATABASESx = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd6rvmpj68r6l4n',
-        'USER': 'vouyocdcjggiwt',
-        'PASSWORD': 'a59df75e117f358691a9e2b460c2d41fc9d2371286e840791a9cafb8219b6463',
-        'HOST': 'ec2-54-221-204-213.compute-1.amazonaws.com',
+        'NAME': 'd8j5jaj7eb2tp1',
+        'USER': 'lriybjfvbqfxln',
+        'PASSWORD': '96bcb992f9303a58cbf4e9c14beee1c741333f9b5ebdaff3e7adbed16e770fb4',
+        'HOST': 'ec2-50-17-203-84.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }

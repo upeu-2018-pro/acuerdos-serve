@@ -1584,3 +1584,1599 @@ smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepte
 [2017-12-13 23:26:51] DEBUG [django.db.backends:111] (0.000) SELECT COUNT(*) AS "__count" FROM "social_auth_usersocialauth" WHERE "social_auth_usersocialauth"."provider" = 'twitter'; args=('twitter',)
 [2017-12-13 23:26:51] INFO [django.server:124] "GET /accounts/ HTTP/1.1" 200 1717
 [2017-12-13 23:26:51] INFO [django.server:124] "GET /static/stylesheets/login.css HTTP/1.1" 304 0
+[2017-12-13 23:34:22] DEBUG [django.db.backends:111] (0.117) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:22] DEBUG [django.db.backends:111] (0.116) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:22] DEBUG [django.db.backends:111] (0.116) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:22] DEBUG [django.db.backends.schema:108] CREATE TABLE "django_migrations" ("id" serial NOT NULL PRIMARY KEY, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" timestamp with time zone NOT NULL); (params None)
+[2017-12-13 23:34:23] DEBUG [django.db.backends:111] (0.241) CREATE TABLE "django_migrations" ("id" serial NOT NULL PRIMARY KEY, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" timestamp with time zone NOT NULL); args=None
+[2017-12-13 23:34:23] DEBUG [django.db.backends.schema:108] CREATE TABLE "django_content_type" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+[2017-12-13 23:34:23] DEBUG [django.db.backends:111] (0.234) CREATE TABLE "django_content_type" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); args=None
+[2017-12-13 23:34:23] DEBUG [django.db.backends.schema:108] ALTER TABLE "django_content_type" ADD CONSTRAINT django_content_type_app_label_model_76bd3d3b_uniq UNIQUE ("app_label", "model"); (params ())
+[2017-12-13 23:34:23] DEBUG [django.db.backends:111] (0.117) ALTER TABLE "django_content_type" ADD CONSTRAINT django_content_type_app_label_model_76bd3d3b_uniq UNIQUE ("app_label", "model"); args=()
+[2017-12-13 23:34:23] DEBUG [django.db.backends:111] (0.114) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:24] DEBUG [django.db.backends:111] (0.229) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('contenttypes', '0001_initial', '2017-12-14T04:34:23.899804+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('contenttypes', '0001_initial', datetime.datetime(2017, 12, 14, 4, 34, 23, 899804, tzinfo=<UTC>))
+[2017-12-13 23:34:24] DEBUG [django.db.backends.schema:108] ALTER TABLE "django_content_type" ALTER COLUMN "name" DROP NOT NULL; (params [])
+[2017-12-13 23:34:24] DEBUG [django.db.backends:111] (0.230) ALTER TABLE "django_content_type" ALTER COLUMN "name" DROP NOT NULL; args=[]
+[2017-12-13 23:34:24] DEBUG [django.db.backends.schema:108] ALTER TABLE "django_content_type" DROP COLUMN "name" CASCADE; (params ())
+[2017-12-13 23:34:24] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "django_content_type" DROP COLUMN "name" CASCADE; args=()
+[2017-12-13 23:34:24] DEBUG [django.db.backends:111] (0.114) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:25] DEBUG [django.db.backends:111] (0.230) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('contenttypes', '0002_remove_content_type_name', '2017-12-14T04:34:24.833318+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('contenttypes', '0002_remove_content_type_name', datetime.datetime(2017, 12, 14, 4, 34, 24, 833318, tzinfo=<UTC>))
+[2017-12-13 23:34:25] DEBUG [django.db.backends.schema:108] CREATE TABLE "auth_permission" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL, "codename" varchar(100) NOT NULL); (params None)
+[2017-12-13 23:34:25] DEBUG [django.db.backends:111] (0.237) CREATE TABLE "auth_permission" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL, "codename" varchar(100) NOT NULL); args=None
+[2017-12-13 23:34:25] DEBUG [django.db.backends.schema:108] CREATE TABLE "auth_group" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(80) NOT NULL UNIQUE); (params None)
+[2017-12-13 23:34:25] DEBUG [django.db.backends:111] (0.135) CREATE TABLE "auth_group" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(80) NOT NULL UNIQUE); args=None
+[2017-12-13 23:34:25] DEBUG [django.db.backends.schema:108] CREATE TABLE "auth_group_permissions" ("id" serial NOT NULL PRIMARY KEY, "group_id" integer NOT NULL, "permission_id" integer NOT NULL); (params None)
+[2017-12-13 23:34:25] DEBUG [django.db.backends:111] (0.119) CREATE TABLE "auth_group_permissions" ("id" serial NOT NULL PRIMARY KEY, "group_id" integer NOT NULL, "permission_id" integer NOT NULL); args=None
+[2017-12-13 23:34:25] DEBUG [django.db.backends.schema:108] ALTER TABLE "auth_permission" ADD CONSTRAINT "auth_permission_content_type_id_2f476e4b_fk_django_co" FOREIGN KEY ("content_type_id") REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:25] DEBUG [django.db.backends:111] (0.117) ALTER TABLE "auth_permission" ADD CONSTRAINT "auth_permission_content_type_id_2f476e4b_fk_django_co" FOREIGN KEY ("content_type_id") REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:25] DEBUG [django.db.backends.schema:108] ALTER TABLE "auth_permission" ADD CONSTRAINT auth_permission_content_type_id_codename_01ab375a_uniq UNIQUE ("content_type_id", "codename"); (params ())
+[2017-12-13 23:34:25] DEBUG [django.db.backends:111] (0.117) ALTER TABLE "auth_permission" ADD CONSTRAINT auth_permission_content_type_id_codename_01ab375a_uniq UNIQUE ("content_type_id", "codename"); args=()
+[2017-12-13 23:34:25] DEBUG [django.db.backends.schema:108] CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
+[2017-12-13 23:34:26] DEBUG [django.db.backends:111] (0.118) CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); args=()
+[2017-12-13 23:34:26] DEBUG [django.db.backends.schema:108] CREATE INDEX "auth_group_name_a6ea08ec_like" ON "auth_group" ("name" varchar_pattern_ops); (params ())
+[2017-12-13 23:34:26] DEBUG [django.db.backends:111] (0.119) CREATE INDEX "auth_group_name_a6ea08ec_like" ON "auth_group" ("name" varchar_pattern_ops); args=()
+[2017-12-13 23:34:26] DEBUG [django.db.backends.schema:108] ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissions_group_id_b120cbf9_fk_auth_group_id" FOREIGN KEY ("group_id") REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:26] DEBUG [django.db.backends:111] (0.116) ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissions_group_id_b120cbf9_fk_auth_group_id" FOREIGN KEY ("group_id") REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:26] DEBUG [django.db.backends.schema:108] ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissio_permission_id_84c5c92e_fk_auth_perm" FOREIGN KEY ("permission_id") REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:26] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissio_permission_id_84c5c92e_fk_auth_perm" FOREIGN KEY ("permission_id") REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:26] DEBUG [django.db.backends.schema:108] ALTER TABLE "auth_group_permissions" ADD CONSTRAINT auth_group_permissions_group_id_permission_id_0cd325b0_uniq UNIQUE ("group_id", "permission_id"); (params ())
+[2017-12-13 23:34:26] DEBUG [django.db.backends:111] (0.118) ALTER TABLE "auth_group_permissions" ADD CONSTRAINT auth_group_permissions_group_id_permission_id_0cd325b0_uniq UNIQUE ("group_id", "permission_id"); args=()
+[2017-12-13 23:34:26] DEBUG [django.db.backends.schema:108] CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); (params ())
+[2017-12-13 23:34:26] DEBUG [django.db.backends:111] (0.117) CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); args=()
+[2017-12-13 23:34:26] DEBUG [django.db.backends.schema:108] CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); (params ())
+[2017-12-13 23:34:26] DEBUG [django.db.backends:111] (0.118) CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); args=()
+[2017-12-13 23:34:27] DEBUG [django.db.backends:111] (0.115) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:27] DEBUG [django.db.backends:111] (0.228) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0001_initial', '2017-12-14T04:34:27.003291+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0001_initial', datetime.datetime(2017, 12, 14, 4, 34, 27, 3291, tzinfo=<UTC>))
+[2017-12-13 23:34:27] DEBUG [django.db.backends.schema:108] ALTER TABLE "auth_permission" ALTER COLUMN "name" TYPE varchar(255) USING "name"::varchar(255); (params [])
+[2017-12-13 23:34:27] DEBUG [django.db.backends:111] (0.230) ALTER TABLE "auth_permission" ALTER COLUMN "name" TYPE varchar(255) USING "name"::varchar(255); args=[]
+[2017-12-13 23:34:27] DEBUG [django.db.backends:111] (0.114) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:28] DEBUG [django.db.backends:111] (0.228) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0002_alter_permission_name_max_length', '2017-12-14T04:34:27.838068+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0002_alter_permission_name_max_length', datetime.datetime(2017, 12, 14, 4, 34, 27, 838068, tzinfo=<UTC>))
+[2017-12-13 23:34:28] DEBUG [django.db.backends:111] (0.116) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:28] DEBUG [django.db.backends:111] (0.226) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0003_alter_user_email_max_length', '2017-12-14T04:34:28.316633+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0003_alter_user_email_max_length', datetime.datetime(2017, 12, 14, 4, 34, 28, 316633, tzinfo=<UTC>))
+[2017-12-13 23:34:28] DEBUG [django.db.backends:111] (0.115) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:29] DEBUG [django.db.backends:111] (0.226) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0004_alter_user_username_opts', '2017-12-14T04:34:28.790654+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0004_alter_user_username_opts', datetime.datetime(2017, 12, 14, 4, 34, 28, 790654, tzinfo=<UTC>))
+[2017-12-13 23:34:29] DEBUG [django.db.backends:111] (0.117) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:29] DEBUG [django.db.backends:111] (0.233) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0005_alter_user_last_login_null', '2017-12-14T04:34:29.266222+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0005_alter_user_last_login_null', datetime.datetime(2017, 12, 14, 4, 34, 29, 266222, tzinfo=<UTC>))
+[2017-12-13 23:34:29] DEBUG [django.db.backends:111] (0.116) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:29] DEBUG [django.db.backends:111] (0.232) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0006_require_contenttypes_0002', '2017-12-14T04:34:29.734282+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0006_require_contenttypes_0002', datetime.datetime(2017, 12, 14, 4, 34, 29, 734282, tzinfo=<UTC>))
+[2017-12-13 23:34:30] DEBUG [django.db.backends:111] (0.118) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:30] DEBUG [django.db.backends:111] (0.227) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0007_alter_validators_add_error_messages', '2017-12-14T04:34:30.206446+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0007_alter_validators_add_error_messages', datetime.datetime(2017, 12, 14, 4, 34, 30, 206446, tzinfo=<UTC>))
+[2017-12-13 23:34:30] DEBUG [django.db.backends:111] (0.115) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:30] DEBUG [django.db.backends:111] (0.226) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0008_alter_user_username_max_length', '2017-12-14T04:34:30.680932+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0008_alter_user_username_max_length', datetime.datetime(2017, 12, 14, 4, 34, 30, 680932, tzinfo=<UTC>))
+[2017-12-13 23:34:31] DEBUG [django.db.backends:111] (0.115) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:31] DEBUG [django.db.backends:111] (0.226) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0009_alter_user_last_name_max_length', '2017-12-14T04:34:31.155182+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0009_alter_user_last_name_max_length', datetime.datetime(2017, 12, 14, 4, 34, 31, 155182, tzinfo=<UTC>))
+[2017-12-13 23:34:31] DEBUG [django.db.backends.schema:108] CREATE TABLE "core_user" ("id" serial NOT NULL PRIMARY KEY, "password" varchar(128) NOT NULL, "last_login" timestamp with time zone NULL, "is_superuser" boolean NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(150) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" boolean NOT NULL, "is_active" boolean NOT NULL, "date_joined" timestamp with time zone NOT NULL, "detalle" text NULL); (params None)
+[2017-12-13 23:34:31] DEBUG [django.db.backends:111] (0.242) CREATE TABLE "core_user" ("id" serial NOT NULL PRIMARY KEY, "password" varchar(128) NOT NULL, "last_login" timestamp with time zone NULL, "is_superuser" boolean NOT NULL, "username" varchar(150) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(150) NOT NULL, "email" varchar(254) NOT NULL, "is_staff" boolean NOT NULL, "is_active" boolean NOT NULL, "date_joined" timestamp with time zone NOT NULL, "detalle" text NULL); args=None
+[2017-12-13 23:34:31] DEBUG [django.db.backends.schema:108] CREATE TABLE "core_user_groups" ("id" serial NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "group_id" integer NOT NULL); (params None)
+[2017-12-13 23:34:31] DEBUG [django.db.backends:111] (0.118) CREATE TABLE "core_user_groups" ("id" serial NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "group_id" integer NOT NULL); args=None
+[2017-12-13 23:34:31] DEBUG [django.db.backends.schema:108] CREATE TABLE "core_person" ("id" serial NOT NULL PRIMARY KEY, "first_name" varchar(60) NULL, "last_name" varchar(60) NULL, "email" varchar(60) NULL, "created_at" timestamp with time zone NULL, "updated_at" timestamp with time zone NULL); (params None)
+[2017-12-13 23:34:32] DEBUG [django.db.backends:111] (0.118) CREATE TABLE "core_person" ("id" serial NOT NULL PRIMARY KEY, "first_name" varchar(60) NULL, "last_name" varchar(60) NULL, "email" varchar(60) NULL, "created_at" timestamp with time zone NULL, "updated_at" timestamp with time zone NULL); args=None
+[2017-12-13 23:34:32] DEBUG [django.db.backends.schema:108] ALTER TABLE "core_user" ADD COLUMN "person_id" integer NULL UNIQUE; (params [])
+[2017-12-13 23:34:32] DEBUG [django.db.backends:111] (0.118) ALTER TABLE "core_user" ADD COLUMN "person_id" integer NULL UNIQUE; args=[]
+[2017-12-13 23:34:32] DEBUG [django.db.backends.schema:108] CREATE TABLE "core_user_user_permissions" ("id" serial NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "permission_id" integer NOT NULL); (params None)
+[2017-12-13 23:34:32] DEBUG [django.db.backends:111] (0.120) CREATE TABLE "core_user_user_permissions" ("id" serial NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "permission_id" integer NOT NULL); args=None
+[2017-12-13 23:34:32] DEBUG [django.db.backends.schema:108] CREATE INDEX "core_user_username_36e4f7f7_like" ON "core_user" ("username" varchar_pattern_ops); (params ())
+[2017-12-13 23:34:32] DEBUG [django.db.backends:111] (0.117) CREATE INDEX "core_user_username_36e4f7f7_like" ON "core_user" ("username" varchar_pattern_ops); args=()
+[2017-12-13 23:34:32] DEBUG [django.db.backends.schema:108] ALTER TABLE "core_user_groups" ADD CONSTRAINT "core_user_groups_user_id_70b4d9b8_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:32] DEBUG [django.db.backends:111] (0.118) ALTER TABLE "core_user_groups" ADD CONSTRAINT "core_user_groups_user_id_70b4d9b8_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:32] DEBUG [django.db.backends.schema:108] ALTER TABLE "core_user_groups" ADD CONSTRAINT "core_user_groups_group_id_fe8c697f_fk_auth_group_id" FOREIGN KEY ("group_id") REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:32] DEBUG [django.db.backends:111] (0.117) ALTER TABLE "core_user_groups" ADD CONSTRAINT "core_user_groups_group_id_fe8c697f_fk_auth_group_id" FOREIGN KEY ("group_id") REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:32] DEBUG [django.db.backends.schema:108] ALTER TABLE "core_user_groups" ADD CONSTRAINT core_user_groups_user_id_group_id_c82fcad1_uniq UNIQUE ("user_id", "group_id"); (params ())
+[2017-12-13 23:34:32] DEBUG [django.db.backends:111] (0.117) ALTER TABLE "core_user_groups" ADD CONSTRAINT core_user_groups_user_id_group_id_c82fcad1_uniq UNIQUE ("user_id", "group_id"); args=()
+[2017-12-13 23:34:32] DEBUG [django.db.backends.schema:108] CREATE INDEX "core_user_groups_user_id_70b4d9b8" ON "core_user_groups" ("user_id"); (params ())
+[2017-12-13 23:34:32] DEBUG [django.db.backends:111] (0.117) CREATE INDEX "core_user_groups_user_id_70b4d9b8" ON "core_user_groups" ("user_id"); args=()
+[2017-12-13 23:34:32] DEBUG [django.db.backends.schema:108] CREATE INDEX "core_user_groups_group_id_fe8c697f" ON "core_user_groups" ("group_id"); (params ())
+[2017-12-13 23:34:32] DEBUG [django.db.backends:111] (0.117) CREATE INDEX "core_user_groups_group_id_fe8c697f" ON "core_user_groups" ("group_id"); args=()
+[2017-12-13 23:34:32] DEBUG [django.db.backends.schema:108] ALTER TABLE "core_user" ADD CONSTRAINT "core_user_person_id_f854b357_fk_core_person_id" FOREIGN KEY ("person_id") REFERENCES "core_person" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:33] DEBUG [django.db.backends:111] (0.114) ALTER TABLE "core_user" ADD CONSTRAINT "core_user_person_id_f854b357_fk_core_person_id" FOREIGN KEY ("person_id") REFERENCES "core_person" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:33] DEBUG [django.db.backends.schema:108] ALTER TABLE "core_user_user_permissions" ADD CONSTRAINT "core_user_user_permissions_user_id_085123d3_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:33] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "core_user_user_permissions" ADD CONSTRAINT "core_user_user_permissions_user_id_085123d3_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:33] DEBUG [django.db.backends.schema:108] ALTER TABLE "core_user_user_permissions" ADD CONSTRAINT "core_user_user_permi_permission_id_35ccf601_fk_auth_perm" FOREIGN KEY ("permission_id") REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:33] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "core_user_user_permissions" ADD CONSTRAINT "core_user_user_permi_permission_id_35ccf601_fk_auth_perm" FOREIGN KEY ("permission_id") REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:33] DEBUG [django.db.backends.schema:108] ALTER TABLE "core_user_user_permissions" ADD CONSTRAINT core_user_user_permissions_user_id_permission_id_73ea0daa_uniq UNIQUE ("user_id", "permission_id"); (params ())
+[2017-12-13 23:34:33] DEBUG [django.db.backends:111] (0.116) ALTER TABLE "core_user_user_permissions" ADD CONSTRAINT core_user_user_permissions_user_id_permission_id_73ea0daa_uniq UNIQUE ("user_id", "permission_id"); args=()
+[2017-12-13 23:34:33] DEBUG [django.db.backends.schema:108] CREATE INDEX "core_user_user_permissions_user_id_085123d3" ON "core_user_user_permissions" ("user_id"); (params ())
+[2017-12-13 23:34:33] DEBUG [django.db.backends:111] (0.116) CREATE INDEX "core_user_user_permissions_user_id_085123d3" ON "core_user_user_permissions" ("user_id"); args=()
+[2017-12-13 23:34:33] DEBUG [django.db.backends.schema:108] CREATE INDEX "core_user_user_permissions_permission_id_35ccf601" ON "core_user_user_permissions" ("permission_id"); (params ())
+[2017-12-13 23:34:33] DEBUG [django.db.backends:111] (0.116) CREATE INDEX "core_user_user_permissions_permission_id_35ccf601" ON "core_user_user_permissions" ("permission_id"); args=()
+[2017-12-13 23:34:33] DEBUG [django.db.backends:111] (0.114) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:34] DEBUG [django.db.backends:111] (0.227) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('core', '0001_initial', '2017-12-14T04:34:33.924096+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('core', '0001_initial', datetime.datetime(2017, 12, 14, 4, 34, 33, 924096, tzinfo=<UTC>))
+[2017-12-13 23:34:34] DEBUG [django.db.backends.schema:108] CREATE TABLE "django_admin_log" ("id" serial NOT NULL PRIMARY KEY, "action_time" timestamp with time zone NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL, "user_id" integer NOT NULL); (params None)
+[2017-12-13 23:34:34] DEBUG [django.db.backends:111] (0.237) CREATE TABLE "django_admin_log" ("id" serial NOT NULL PRIMARY KEY, "action_time" timestamp with time zone NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL, "user_id" integer NOT NULL); args=None
+[2017-12-13 23:34:34] DEBUG [django.db.backends.schema:108] ALTER TABLE "django_admin_log" ADD CONSTRAINT "django_admin_log_content_type_id_c4bce8eb_fk_django_co" FOREIGN KEY ("content_type_id") REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:34] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "django_admin_log" ADD CONSTRAINT "django_admin_log_content_type_id_c4bce8eb_fk_django_co" FOREIGN KEY ("content_type_id") REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:34] DEBUG [django.db.backends.schema:108] ALTER TABLE "django_admin_log" ADD CONSTRAINT "django_admin_log_user_id_c564eba6_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:34] DEBUG [django.db.backends:111] (0.114) ALTER TABLE "django_admin_log" ADD CONSTRAINT "django_admin_log_user_id_c564eba6_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:34] DEBUG [django.db.backends.schema:108] CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+[2017-12-13 23:34:34] DEBUG [django.db.backends:111] (0.119) CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); args=()
+[2017-12-13 23:34:34] DEBUG [django.db.backends.schema:108] CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+[2017-12-13 23:34:34] DEBUG [django.db.backends:111] (0.116) CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); args=()
+[2017-12-13 23:34:35] DEBUG [django.db.backends:111] (0.116) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:35] DEBUG [django.db.backends:111] (0.230) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('admin', '0001_initial', '2017-12-14T04:34:35.229793+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('admin', '0001_initial', datetime.datetime(2017, 12, 14, 4, 34, 35, 229793, tzinfo=<UTC>))
+[2017-12-13 23:34:35] DEBUG [django.db.backends:111] (0.114) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:35] DEBUG [django.db.backends:111] (0.228) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('admin', '0002_logentry_remove_auto_add', '2017-12-14T04:34:35.708491+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('admin', '0002_logentry_remove_auto_add', datetime.datetime(2017, 12, 14, 4, 34, 35, 708491, tzinfo=<UTC>))
+[2017-12-13 23:34:36] DEBUG [django.db.backends.schema:108] CREATE TABLE "oauth2_provider_application" ("id" serial NOT NULL PRIMARY KEY, "client_id" varchar(100) NOT NULL UNIQUE, "redirect_uris" text NOT NULL, "client_type" varchar(32) NOT NULL, "authorization_grant_type" varchar(32) NOT NULL, "client_secret" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "user_id" integer NOT NULL); (params None)
+[2017-12-13 23:34:36] DEBUG [django.db.backends:111] (0.239) CREATE TABLE "oauth2_provider_application" ("id" serial NOT NULL PRIMARY KEY, "client_id" varchar(100) NOT NULL UNIQUE, "redirect_uris" text NOT NULL, "client_type" varchar(32) NOT NULL, "authorization_grant_type" varchar(32) NOT NULL, "client_secret" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "user_id" integer NOT NULL); args=None
+[2017-12-13 23:34:36] DEBUG [django.db.backends.schema:108] CREATE TABLE "oauth2_provider_accesstoken" ("id" serial NOT NULL PRIMARY KEY, "token" varchar(255) NOT NULL, "expires" timestamp with time zone NOT NULL, "scope" text NOT NULL, "application_id" integer NOT NULL, "user_id" integer NOT NULL); (params None)
+[2017-12-13 23:34:36] DEBUG [django.db.backends:111] (0.121) CREATE TABLE "oauth2_provider_accesstoken" ("id" serial NOT NULL PRIMARY KEY, "token" varchar(255) NOT NULL, "expires" timestamp with time zone NOT NULL, "scope" text NOT NULL, "application_id" integer NOT NULL, "user_id" integer NOT NULL); args=None
+[2017-12-13 23:34:36] DEBUG [django.db.backends.schema:108] CREATE TABLE "oauth2_provider_grant" ("id" serial NOT NULL PRIMARY KEY, "code" varchar(255) NOT NULL, "expires" timestamp with time zone NOT NULL, "redirect_uri" varchar(255) NOT NULL, "scope" text NOT NULL, "application_id" integer NOT NULL, "user_id" integer NOT NULL); (params None)
+[2017-12-13 23:34:36] DEBUG [django.db.backends:111] (0.121) CREATE TABLE "oauth2_provider_grant" ("id" serial NOT NULL PRIMARY KEY, "code" varchar(255) NOT NULL, "expires" timestamp with time zone NOT NULL, "redirect_uri" varchar(255) NOT NULL, "scope" text NOT NULL, "application_id" integer NOT NULL, "user_id" integer NOT NULL); args=None
+[2017-12-13 23:34:36] DEBUG [django.db.backends.schema:108] CREATE TABLE "oauth2_provider_refreshtoken" ("id" serial NOT NULL PRIMARY KEY, "token" varchar(255) NOT NULL, "access_token_id" integer NOT NULL UNIQUE, "application_id" integer NOT NULL, "user_id" integer NOT NULL); (params None)
+[2017-12-13 23:34:36] DEBUG [django.db.backends:111] (0.120) CREATE TABLE "oauth2_provider_refreshtoken" ("id" serial NOT NULL PRIMARY KEY, "token" varchar(255) NOT NULL, "access_token_id" integer NOT NULL UNIQUE, "application_id" integer NOT NULL, "user_id" integer NOT NULL); args=None
+[2017-12-13 23:34:36] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_application" ADD CONSTRAINT "oauth2_provider_application_user_id_79829054_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:36] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_application" ADD CONSTRAINT "oauth2_provider_application_user_id_79829054_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:36] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_application_client_id_03f0cc84_like" ON "oauth2_provider_application" ("client_id" varchar_pattern_ops); (params ())
+[2017-12-13 23:34:36] DEBUG [django.db.backends:111] (0.118) CREATE INDEX "oauth2_provider_application_client_id_03f0cc84_like" ON "oauth2_provider_application" ("client_id" varchar_pattern_ops); args=()
+[2017-12-13 23:34:36] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_application_client_secret_53133678" ON "oauth2_provider_application" ("client_secret"); (params ())
+[2017-12-13 23:34:37] DEBUG [django.db.backends:111] (0.116) CREATE INDEX "oauth2_provider_application_client_secret_53133678" ON "oauth2_provider_application" ("client_secret"); args=()
+[2017-12-13 23:34:37] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_application_client_secret_53133678_like" ON "oauth2_provider_application" ("client_secret" varchar_pattern_ops); (params ())
+[2017-12-13 23:34:37] DEBUG [django.db.backends:111] (0.118) CREATE INDEX "oauth2_provider_application_client_secret_53133678_like" ON "oauth2_provider_application" ("client_secret" varchar_pattern_ops); args=()
+[2017-12-13 23:34:37] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_application_user_id_79829054" ON "oauth2_provider_application" ("user_id"); (params ())
+[2017-12-13 23:34:37] DEBUG [django.db.backends:111] (0.120) CREATE INDEX "oauth2_provider_application_user_id_79829054" ON "oauth2_provider_application" ("user_id"); args=()
+[2017-12-13 23:34:37] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_accesstoken" ADD CONSTRAINT "oauth2_provider_acce_application_id_b22886e1_fk_oauth2_pr" FOREIGN KEY ("application_id") REFERENCES "oauth2_provider_application" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:37] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_accesstoken" ADD CONSTRAINT "oauth2_provider_acce_application_id_b22886e1_fk_oauth2_pr" FOREIGN KEY ("application_id") REFERENCES "oauth2_provider_application" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:37] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_accesstoken" ADD CONSTRAINT "oauth2_provider_accesstoken_user_id_6e4c9a65_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:37] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_accesstoken" ADD CONSTRAINT "oauth2_provider_accesstoken_user_id_6e4c9a65_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:37] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_accesstoken_token_8af090f8" ON "oauth2_provider_accesstoken" ("token"); (params ())
+[2017-12-13 23:34:37] DEBUG [django.db.backends:111] (0.117) CREATE INDEX "oauth2_provider_accesstoken_token_8af090f8" ON "oauth2_provider_accesstoken" ("token"); args=()
+[2017-12-13 23:34:37] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_accesstoken_token_8af090f8_like" ON "oauth2_provider_accesstoken" ("token" varchar_pattern_ops); (params ())
+[2017-12-13 23:34:37] DEBUG [django.db.backends:111] (0.127) CREATE INDEX "oauth2_provider_accesstoken_token_8af090f8_like" ON "oauth2_provider_accesstoken" ("token" varchar_pattern_ops); args=()
+[2017-12-13 23:34:37] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_accesstoken_application_id_b22886e1" ON "oauth2_provider_accesstoken" ("application_id"); (params ())
+[2017-12-13 23:34:37] DEBUG [django.db.backends:111] (0.128) CREATE INDEX "oauth2_provider_accesstoken_application_id_b22886e1" ON "oauth2_provider_accesstoken" ("application_id"); args=()
+[2017-12-13 23:34:37] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_accesstoken_user_id_6e4c9a65" ON "oauth2_provider_accesstoken" ("user_id"); (params ())
+[2017-12-13 23:34:38] DEBUG [django.db.backends:111] (0.119) CREATE INDEX "oauth2_provider_accesstoken_user_id_6e4c9a65" ON "oauth2_provider_accesstoken" ("user_id"); args=()
+[2017-12-13 23:34:38] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_grant" ADD CONSTRAINT "oauth2_provider_gran_application_id_81923564_fk_oauth2_pr" FOREIGN KEY ("application_id") REFERENCES "oauth2_provider_application" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:38] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_grant" ADD CONSTRAINT "oauth2_provider_gran_application_id_81923564_fk_oauth2_pr" FOREIGN KEY ("application_id") REFERENCES "oauth2_provider_application" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:38] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_grant" ADD CONSTRAINT "oauth2_provider_grant_user_id_e8f62af8_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:38] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_grant" ADD CONSTRAINT "oauth2_provider_grant_user_id_e8f62af8_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:38] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_grant_code_49ab4ddf" ON "oauth2_provider_grant" ("code"); (params ())
+[2017-12-13 23:34:38] DEBUG [django.db.backends:111] (0.117) CREATE INDEX "oauth2_provider_grant_code_49ab4ddf" ON "oauth2_provider_grant" ("code"); args=()
+[2017-12-13 23:34:38] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_grant_code_49ab4ddf_like" ON "oauth2_provider_grant" ("code" varchar_pattern_ops); (params ())
+[2017-12-13 23:34:38] DEBUG [django.db.backends:111] (0.116) CREATE INDEX "oauth2_provider_grant_code_49ab4ddf_like" ON "oauth2_provider_grant" ("code" varchar_pattern_ops); args=()
+[2017-12-13 23:34:38] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_grant_application_id_81923564" ON "oauth2_provider_grant" ("application_id"); (params ())
+[2017-12-13 23:34:38] DEBUG [django.db.backends:111] (0.116) CREATE INDEX "oauth2_provider_grant_application_id_81923564" ON "oauth2_provider_grant" ("application_id"); args=()
+[2017-12-13 23:34:38] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_grant_user_id_e8f62af8" ON "oauth2_provider_grant" ("user_id"); (params ())
+[2017-12-13 23:34:38] DEBUG [django.db.backends:111] (0.116) CREATE INDEX "oauth2_provider_grant_user_id_e8f62af8" ON "oauth2_provider_grant" ("user_id"); args=()
+[2017-12-13 23:34:38] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_refreshtoken" ADD CONSTRAINT "oauth2_provider_refr_access_token_id_775e84e8_fk_oauth2_pr" FOREIGN KEY ("access_token_id") REFERENCES "oauth2_provider_accesstoken" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:38] DEBUG [django.db.backends:111] (0.114) ALTER TABLE "oauth2_provider_refreshtoken" ADD CONSTRAINT "oauth2_provider_refr_access_token_id_775e84e8_fk_oauth2_pr" FOREIGN KEY ("access_token_id") REFERENCES "oauth2_provider_accesstoken" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:38] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_refreshtoken" ADD CONSTRAINT "oauth2_provider_refr_application_id_2d1c311b_fk_oauth2_pr" FOREIGN KEY ("application_id") REFERENCES "oauth2_provider_application" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:38] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_refreshtoken" ADD CONSTRAINT "oauth2_provider_refr_application_id_2d1c311b_fk_oauth2_pr" FOREIGN KEY ("application_id") REFERENCES "oauth2_provider_application" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:38] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_refreshtoken" ADD CONSTRAINT "oauth2_provider_refreshtoken_user_id_da837fce_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:39] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_refreshtoken" ADD CONSTRAINT "oauth2_provider_refreshtoken_user_id_da837fce_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:39] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_refreshtoken_token_d090daa4" ON "oauth2_provider_refreshtoken" ("token"); (params ())
+[2017-12-13 23:34:39] DEBUG [django.db.backends:111] (0.116) CREATE INDEX "oauth2_provider_refreshtoken_token_d090daa4" ON "oauth2_provider_refreshtoken" ("token"); args=()
+[2017-12-13 23:34:39] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_refreshtoken_token_d090daa4_like" ON "oauth2_provider_refreshtoken" ("token" varchar_pattern_ops); (params ())
+[2017-12-13 23:34:39] DEBUG [django.db.backends:111] (0.116) CREATE INDEX "oauth2_provider_refreshtoken_token_d090daa4_like" ON "oauth2_provider_refreshtoken" ("token" varchar_pattern_ops); args=()
+[2017-12-13 23:34:39] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_refreshtoken_application_id_2d1c311b" ON "oauth2_provider_refreshtoken" ("application_id"); (params ())
+[2017-12-13 23:34:39] DEBUG [django.db.backends:111] (0.116) CREATE INDEX "oauth2_provider_refreshtoken_application_id_2d1c311b" ON "oauth2_provider_refreshtoken" ("application_id"); args=()
+[2017-12-13 23:34:39] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_refreshtoken_user_id_da837fce" ON "oauth2_provider_refreshtoken" ("user_id"); (params ())
+[2017-12-13 23:34:39] DEBUG [django.db.backends:111] (0.116) CREATE INDEX "oauth2_provider_refreshtoken_user_id_da837fce" ON "oauth2_provider_refreshtoken" ("user_id"); args=()
+[2017-12-13 23:34:39] DEBUG [django.db.backends:111] (0.114) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:40] DEBUG [django.db.backends:111] (0.226) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('oauth2_provider', '0001_initial', '2017-12-14T04:34:39.814414+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('oauth2_provider', '0001_initial', datetime.datetime(2017, 12, 14, 4, 34, 39, 814414, tzinfo=<UTC>))
+[2017-12-13 23:34:40] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_application" ADD COLUMN "skip_authorization" boolean DEFAULT %s NOT NULL; (params [False])
+[2017-12-13 23:34:40] DEBUG [django.db.backends:111] (0.245) ALTER TABLE "oauth2_provider_application" ADD COLUMN "skip_authorization" boolean DEFAULT false NOT NULL; args=[False]
+[2017-12-13 23:34:40] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_application" ALTER COLUMN "skip_authorization" DROP DEFAULT; (params [])
+[2017-12-13 23:34:40] DEBUG [django.db.backends:111] (0.114) ALTER TABLE "oauth2_provider_application" ALTER COLUMN "skip_authorization" DROP DEFAULT; args=[]
+[2017-12-13 23:34:40] DEBUG [django.db.backends:111] (0.117) 
+            SELECT
+                c.conname,
+                array(
+                    SELECT attname
+                    FROM (
+                        SELECT unnest(c.conkey) AS colid,
+                               generate_series(1, array_length(c.conkey, 1)) AS arridx
+                    ) AS cols
+                    JOIN pg_attribute AS ca ON cols.colid = ca.attnum
+                    WHERE ca.attrelid = c.conrelid
+                    ORDER BY cols.arridx
+                ),
+                c.contype,
+                (SELECT fkc.relname || '.' || fka.attname
+                FROM pg_attribute AS fka
+                JOIN pg_class AS fkc ON fka.attrelid = fkc.oid
+                WHERE fka.attrelid = c.confrelid AND fka.attnum = c.confkey[1]),
+                cl.reloptions
+            FROM pg_constraint AS c
+            JOIN pg_class AS cl ON c.conrelid = cl.oid
+            JOIN pg_namespace AS ns ON cl.relnamespace = ns.oid
+            WHERE ns.nspname = 'public' AND cl.relname = 'oauth2_provider_application'
+        ; args=['public', 'oauth2_provider_application']
+[2017-12-13 23:34:40] DEBUG [django.db.backends:111] (0.121) 
+            SELECT
+                indexname, array_agg(attname ORDER BY rnum), indisunique, indisprimary,
+                array_agg(ordering ORDER BY rnum), amname, exprdef, s2.attoptions
+            FROM (
+                SELECT
+                    row_number() OVER () as rnum, c2.relname as indexname,
+                    idx.*, attr.attname, am.amname,
+                    CASE
+                        WHEN idx.indexprs IS NOT NULL THEN
+                            pg_get_indexdef(idx.indexrelid)
+                    END AS exprdef,
+                    CASE am.amname
+                        WHEN 'btree' THEN
+                            CASE (option & 1)
+                                WHEN 1 THEN 'DESC' ELSE 'ASC'
+                            END
+                    END as ordering,
+                    c2.reloptions as attoptions
+                FROM (
+                    SELECT
+                        *, unnest(i.indkey) as key, unnest(i.indoption) as option
+                    FROM pg_index i
+                ) idx
+                LEFT JOIN pg_class c ON idx.indrelid = c.oid
+                LEFT JOIN pg_class c2 ON idx.indexrelid = c2.oid
+                LEFT JOIN pg_am am ON c2.relam = am.oid
+                LEFT JOIN pg_attribute attr ON attr.attrelid = c.oid AND attr.attnum = idx.key
+                WHERE c.relname = 'oauth2_provider_application'
+            ) s2
+            GROUP BY indexname, indisunique, indisprimary, amname, exprdef, attoptions;
+        ; args=['oauth2_provider_application']
+[2017-12-13 23:34:40] DEBUG [django.db.backends.schema:108] SET CONSTRAINTS "oauth2_provider_application_user_id_79829054_fk_core_user_id" IMMEDIATE; ALTER TABLE "oauth2_provider_application" DROP CONSTRAINT "oauth2_provider_application_user_id_79829054_fk_core_user_id"; (params ())
+[2017-12-13 23:34:40] DEBUG [django.db.backends:111] (0.115) SET CONSTRAINTS "oauth2_provider_application_user_id_79829054_fk_core_user_id" IMMEDIATE; ALTER TABLE "oauth2_provider_application" DROP CONSTRAINT "oauth2_provider_application_user_id_79829054_fk_core_user_id"; args=()
+[2017-12-13 23:34:40] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_application" ADD CONSTRAINT "oauth2_provider_application_user_id_79829054_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:41] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_application" ADD CONSTRAINT "oauth2_provider_application_user_id_79829054_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:41] DEBUG [django.db.backends:111] (0.114) 
+            SELECT
+                c.conname,
+                array(
+                    SELECT attname
+                    FROM (
+                        SELECT unnest(c.conkey) AS colid,
+                               generate_series(1, array_length(c.conkey, 1)) AS arridx
+                    ) AS cols
+                    JOIN pg_attribute AS ca ON cols.colid = ca.attnum
+                    WHERE ca.attrelid = c.conrelid
+                    ORDER BY cols.arridx
+                ),
+                c.contype,
+                (SELECT fkc.relname || '.' || fka.attname
+                FROM pg_attribute AS fka
+                JOIN pg_class AS fkc ON fka.attrelid = fkc.oid
+                WHERE fka.attrelid = c.confrelid AND fka.attnum = c.confkey[1]),
+                cl.reloptions
+            FROM pg_constraint AS c
+            JOIN pg_class AS cl ON c.conrelid = cl.oid
+            JOIN pg_namespace AS ns ON cl.relnamespace = ns.oid
+            WHERE ns.nspname = 'public' AND cl.relname = 'oauth2_provider_accesstoken'
+        ; args=['public', 'oauth2_provider_accesstoken']
+[2017-12-13 23:34:41] DEBUG [django.db.backends:111] (0.117) 
+            SELECT
+                indexname, array_agg(attname ORDER BY rnum), indisunique, indisprimary,
+                array_agg(ordering ORDER BY rnum), amname, exprdef, s2.attoptions
+            FROM (
+                SELECT
+                    row_number() OVER () as rnum, c2.relname as indexname,
+                    idx.*, attr.attname, am.amname,
+                    CASE
+                        WHEN idx.indexprs IS NOT NULL THEN
+                            pg_get_indexdef(idx.indexrelid)
+                    END AS exprdef,
+                    CASE am.amname
+                        WHEN 'btree' THEN
+                            CASE (option & 1)
+                                WHEN 1 THEN 'DESC' ELSE 'ASC'
+                            END
+                    END as ordering,
+                    c2.reloptions as attoptions
+                FROM (
+                    SELECT
+                        *, unnest(i.indkey) as key, unnest(i.indoption) as option
+                    FROM pg_index i
+                ) idx
+                LEFT JOIN pg_class c ON idx.indrelid = c.oid
+                LEFT JOIN pg_class c2 ON idx.indexrelid = c2.oid
+                LEFT JOIN pg_am am ON c2.relam = am.oid
+                LEFT JOIN pg_attribute attr ON attr.attrelid = c.oid AND attr.attnum = idx.key
+                WHERE c.relname = 'oauth2_provider_accesstoken'
+            ) s2
+            GROUP BY indexname, indisunique, indisprimary, amname, exprdef, attoptions;
+        ; args=['oauth2_provider_accesstoken']
+[2017-12-13 23:34:41] DEBUG [django.db.backends.schema:108] SET CONSTRAINTS "oauth2_provider_accesstoken_user_id_6e4c9a65_fk_core_user_id" IMMEDIATE; ALTER TABLE "oauth2_provider_accesstoken" DROP CONSTRAINT "oauth2_provider_accesstoken_user_id_6e4c9a65_fk_core_user_id"; (params ())
+[2017-12-13 23:34:41] DEBUG [django.db.backends:111] (0.115) SET CONSTRAINTS "oauth2_provider_accesstoken_user_id_6e4c9a65_fk_core_user_id" IMMEDIATE; ALTER TABLE "oauth2_provider_accesstoken" DROP CONSTRAINT "oauth2_provider_accesstoken_user_id_6e4c9a65_fk_core_user_id"; args=()
+[2017-12-13 23:34:41] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_accesstoken" ALTER COLUMN "user_id" DROP NOT NULL; (params [])
+[2017-12-13 23:34:41] DEBUG [django.db.backends:111] (0.116) ALTER TABLE "oauth2_provider_accesstoken" ALTER COLUMN "user_id" DROP NOT NULL; args=[]
+[2017-12-13 23:34:41] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_accesstoken" ADD CONSTRAINT "oauth2_provider_accesstoken_user_id_6e4c9a65_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:41] DEBUG [django.db.backends:111] (0.117) ALTER TABLE "oauth2_provider_accesstoken" ADD CONSTRAINT "oauth2_provider_accesstoken_user_id_6e4c9a65_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:41] DEBUG [django.db.backends:111] (0.118) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:42] DEBUG [django.db.backends:111] (0.232) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('oauth2_provider', '0002_08_updates', '2017-12-14T04:34:41.929243+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('oauth2_provider', '0002_08_updates', datetime.datetime(2017, 12, 14, 4, 34, 41, 929243, tzinfo=<UTC>))
+[2017-12-13 23:34:42] DEBUG [django.db.backends:111] (0.230) 
+            SELECT
+                c.conname,
+                array(
+                    SELECT attname
+                    FROM (
+                        SELECT unnest(c.conkey) AS colid,
+                               generate_series(1, array_length(c.conkey, 1)) AS arridx
+                    ) AS cols
+                    JOIN pg_attribute AS ca ON cols.colid = ca.attnum
+                    WHERE ca.attrelid = c.conrelid
+                    ORDER BY cols.arridx
+                ),
+                c.contype,
+                (SELECT fkc.relname || '.' || fka.attname
+                FROM pg_attribute AS fka
+                JOIN pg_class AS fkc ON fka.attrelid = fkc.oid
+                WHERE fka.attrelid = c.confrelid AND fka.attnum = c.confkey[1]),
+                cl.reloptions
+            FROM pg_constraint AS c
+            JOIN pg_class AS cl ON c.conrelid = cl.oid
+            JOIN pg_namespace AS ns ON cl.relnamespace = ns.oid
+            WHERE ns.nspname = 'public' AND cl.relname = 'oauth2_provider_application'
+        ; args=['public', 'oauth2_provider_application']
+[2017-12-13 23:34:42] DEBUG [django.db.backends:111] (0.118) 
+            SELECT
+                indexname, array_agg(attname ORDER BY rnum), indisunique, indisprimary,
+                array_agg(ordering ORDER BY rnum), amname, exprdef, s2.attoptions
+            FROM (
+                SELECT
+                    row_number() OVER () as rnum, c2.relname as indexname,
+                    idx.*, attr.attname, am.amname,
+                    CASE
+                        WHEN idx.indexprs IS NOT NULL THEN
+                            pg_get_indexdef(idx.indexrelid)
+                    END AS exprdef,
+                    CASE am.amname
+                        WHEN 'btree' THEN
+                            CASE (option & 1)
+                                WHEN 1 THEN 'DESC' ELSE 'ASC'
+                            END
+                    END as ordering,
+                    c2.reloptions as attoptions
+                FROM (
+                    SELECT
+                        *, unnest(i.indkey) as key, unnest(i.indoption) as option
+                    FROM pg_index i
+                ) idx
+                LEFT JOIN pg_class c ON idx.indrelid = c.oid
+                LEFT JOIN pg_class c2 ON idx.indexrelid = c2.oid
+                LEFT JOIN pg_am am ON c2.relam = am.oid
+                LEFT JOIN pg_attribute attr ON attr.attrelid = c.oid AND attr.attnum = idx.key
+                WHERE c.relname = 'oauth2_provider_application'
+            ) s2
+            GROUP BY indexname, indisunique, indisprimary, amname, exprdef, attoptions;
+        ; args=['oauth2_provider_application']
+[2017-12-13 23:34:42] DEBUG [django.db.backends.schema:108] SET CONSTRAINTS "oauth2_provider_application_user_id_79829054_fk_core_user_id" IMMEDIATE; ALTER TABLE "oauth2_provider_application" DROP CONSTRAINT "oauth2_provider_application_user_id_79829054_fk_core_user_id"; (params ())
+[2017-12-13 23:34:42] DEBUG [django.db.backends:111] (0.119) SET CONSTRAINTS "oauth2_provider_application_user_id_79829054_fk_core_user_id" IMMEDIATE; ALTER TABLE "oauth2_provider_application" DROP CONSTRAINT "oauth2_provider_application_user_id_79829054_fk_core_user_id"; args=()
+[2017-12-13 23:34:42] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_application" ALTER COLUMN "user_id" DROP NOT NULL; (params [])
+[2017-12-13 23:34:42] DEBUG [django.db.backends:111] (0.114) ALTER TABLE "oauth2_provider_application" ALTER COLUMN "user_id" DROP NOT NULL; args=[]
+[2017-12-13 23:34:42] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_application" ADD CONSTRAINT "oauth2_provider_application_user_id_79829054_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:43] DEBUG [django.db.backends:111] (0.117) ALTER TABLE "oauth2_provider_application" ADD CONSTRAINT "oauth2_provider_application_user_id_79829054_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:43] DEBUG [django.db.backends:111] (0.116) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:43] DEBUG [django.db.backends:111] (0.235) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('oauth2_provider', '0003_auto_20160316_1503', '2017-12-14T04:34:43.257406+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('oauth2_provider', '0003_auto_20160316_1503', datetime.datetime(2017, 12, 14, 4, 34, 43, 257406, tzinfo=<UTC>))
+[2017-12-13 23:34:43] DEBUG [django.db.backends:111] (0.228) 
+            SELECT
+                c.conname,
+                array(
+                    SELECT attname
+                    FROM (
+                        SELECT unnest(c.conkey) AS colid,
+                               generate_series(1, array_length(c.conkey, 1)) AS arridx
+                    ) AS cols
+                    JOIN pg_attribute AS ca ON cols.colid = ca.attnum
+                    WHERE ca.attrelid = c.conrelid
+                    ORDER BY cols.arridx
+                ),
+                c.contype,
+                (SELECT fkc.relname || '.' || fka.attname
+                FROM pg_attribute AS fka
+                JOIN pg_class AS fkc ON fka.attrelid = fkc.oid
+                WHERE fka.attrelid = c.confrelid AND fka.attnum = c.confkey[1]),
+                cl.reloptions
+            FROM pg_constraint AS c
+            JOIN pg_class AS cl ON c.conrelid = cl.oid
+            JOIN pg_namespace AS ns ON cl.relnamespace = ns.oid
+            WHERE ns.nspname = 'public' AND cl.relname = 'oauth2_provider_accesstoken'
+        ; args=['public', 'oauth2_provider_accesstoken']
+[2017-12-13 23:34:43] DEBUG [django.db.backends:111] (0.119) 
+            SELECT
+                indexname, array_agg(attname ORDER BY rnum), indisunique, indisprimary,
+                array_agg(ordering ORDER BY rnum), amname, exprdef, s2.attoptions
+            FROM (
+                SELECT
+                    row_number() OVER () as rnum, c2.relname as indexname,
+                    idx.*, attr.attname, am.amname,
+                    CASE
+                        WHEN idx.indexprs IS NOT NULL THEN
+                            pg_get_indexdef(idx.indexrelid)
+                    END AS exprdef,
+                    CASE am.amname
+                        WHEN 'btree' THEN
+                            CASE (option & 1)
+                                WHEN 1 THEN 'DESC' ELSE 'ASC'
+                            END
+                    END as ordering,
+                    c2.reloptions as attoptions
+                FROM (
+                    SELECT
+                        *, unnest(i.indkey) as key, unnest(i.indoption) as option
+                    FROM pg_index i
+                ) idx
+                LEFT JOIN pg_class c ON idx.indrelid = c.oid
+                LEFT JOIN pg_class c2 ON idx.indexrelid = c2.oid
+                LEFT JOIN pg_am am ON c2.relam = am.oid
+                LEFT JOIN pg_attribute attr ON attr.attrelid = c.oid AND attr.attnum = idx.key
+                WHERE c.relname = 'oauth2_provider_accesstoken'
+            ) s2
+            GROUP BY indexname, indisunique, indisprimary, amname, exprdef, attoptions;
+        ; args=['oauth2_provider_accesstoken']
+[2017-12-13 23:34:43] DEBUG [django.db.backends.schema:108] DROP INDEX IF EXISTS "oauth2_provider_accesstoken_token_8af090f8"; (params ())
+[2017-12-13 23:34:44] DEBUG [django.db.backends:111] (0.117) DROP INDEX IF EXISTS "oauth2_provider_accesstoken_token_8af090f8"; args=()
+[2017-12-13 23:34:44] DEBUG [django.db.backends.schema:108] DROP INDEX IF EXISTS "oauth2_provider_accesstoken_token_8af090f8_like"; (params ())
+[2017-12-13 23:34:44] DEBUG [django.db.backends:111] (0.114) DROP INDEX IF EXISTS "oauth2_provider_accesstoken_token_8af090f8_like"; args=()
+[2017-12-13 23:34:44] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_accesstoken" ADD CONSTRAINT oauth2_provider_accesstoken_token_8af090f8_uniq UNIQUE ("token"); (params ())
+[2017-12-13 23:34:44] DEBUG [django.db.backends:111] (0.118) ALTER TABLE "oauth2_provider_accesstoken" ADD CONSTRAINT oauth2_provider_accesstoken_token_8af090f8_uniq UNIQUE ("token"); args=()
+[2017-12-13 23:34:44] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_accesstoken_token_8af090f8_like" ON "oauth2_provider_accesstoken" ("token" varchar_pattern_ops); (params ())
+[2017-12-13 23:34:44] DEBUG [django.db.backends:111] (0.126) CREATE INDEX "oauth2_provider_accesstoken_token_8af090f8_like" ON "oauth2_provider_accesstoken" ("token" varchar_pattern_ops); args=()
+[2017-12-13 23:34:44] DEBUG [django.db.backends:111] (0.117) 
+            SELECT
+                c.conname,
+                array(
+                    SELECT attname
+                    FROM (
+                        SELECT unnest(c.conkey) AS colid,
+                               generate_series(1, array_length(c.conkey, 1)) AS arridx
+                    ) AS cols
+                    JOIN pg_attribute AS ca ON cols.colid = ca.attnum
+                    WHERE ca.attrelid = c.conrelid
+                    ORDER BY cols.arridx
+                ),
+                c.contype,
+                (SELECT fkc.relname || '.' || fka.attname
+                FROM pg_attribute AS fka
+                JOIN pg_class AS fkc ON fka.attrelid = fkc.oid
+                WHERE fka.attrelid = c.confrelid AND fka.attnum = c.confkey[1]),
+                cl.reloptions
+            FROM pg_constraint AS c
+            JOIN pg_class AS cl ON c.conrelid = cl.oid
+            JOIN pg_namespace AS ns ON cl.relnamespace = ns.oid
+            WHERE ns.nspname = 'public' AND cl.relname = 'oauth2_provider_grant'
+        ; args=['public', 'oauth2_provider_grant']
+[2017-12-13 23:34:44] DEBUG [django.db.backends:111] (0.116) 
+            SELECT
+                indexname, array_agg(attname ORDER BY rnum), indisunique, indisprimary,
+                array_agg(ordering ORDER BY rnum), amname, exprdef, s2.attoptions
+            FROM (
+                SELECT
+                    row_number() OVER () as rnum, c2.relname as indexname,
+                    idx.*, attr.attname, am.amname,
+                    CASE
+                        WHEN idx.indexprs IS NOT NULL THEN
+                            pg_get_indexdef(idx.indexrelid)
+                    END AS exprdef,
+                    CASE am.amname
+                        WHEN 'btree' THEN
+                            CASE (option & 1)
+                                WHEN 1 THEN 'DESC' ELSE 'ASC'
+                            END
+                    END as ordering,
+                    c2.reloptions as attoptions
+                FROM (
+                    SELECT
+                        *, unnest(i.indkey) as key, unnest(i.indoption) as option
+                    FROM pg_index i
+                ) idx
+                LEFT JOIN pg_class c ON idx.indrelid = c.oid
+                LEFT JOIN pg_class c2 ON idx.indexrelid = c2.oid
+                LEFT JOIN pg_am am ON c2.relam = am.oid
+                LEFT JOIN pg_attribute attr ON attr.attrelid = c.oid AND attr.attnum = idx.key
+                WHERE c.relname = 'oauth2_provider_grant'
+            ) s2
+            GROUP BY indexname, indisunique, indisprimary, amname, exprdef, attoptions;
+        ; args=['oauth2_provider_grant']
+[2017-12-13 23:34:44] DEBUG [django.db.backends.schema:108] DROP INDEX IF EXISTS "oauth2_provider_grant_code_49ab4ddf"; (params ())
+[2017-12-13 23:34:44] DEBUG [django.db.backends:111] (0.115) DROP INDEX IF EXISTS "oauth2_provider_grant_code_49ab4ddf"; args=()
+[2017-12-13 23:34:44] DEBUG [django.db.backends.schema:108] DROP INDEX IF EXISTS "oauth2_provider_grant_code_49ab4ddf_like"; (params ())
+[2017-12-13 23:34:44] DEBUG [django.db.backends:111] (0.123) DROP INDEX IF EXISTS "oauth2_provider_grant_code_49ab4ddf_like"; args=()
+[2017-12-13 23:34:44] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_grant" ADD CONSTRAINT oauth2_provider_grant_code_49ab4ddf_uniq UNIQUE ("code"); (params ())
+[2017-12-13 23:34:45] DEBUG [django.db.backends:111] (0.116) ALTER TABLE "oauth2_provider_grant" ADD CONSTRAINT oauth2_provider_grant_code_49ab4ddf_uniq UNIQUE ("code"); args=()
+[2017-12-13 23:34:45] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_grant_code_49ab4ddf_like" ON "oauth2_provider_grant" ("code" varchar_pattern_ops); (params ())
+[2017-12-13 23:34:45] DEBUG [django.db.backends:111] (0.117) CREATE INDEX "oauth2_provider_grant_code_49ab4ddf_like" ON "oauth2_provider_grant" ("code" varchar_pattern_ops); args=()
+[2017-12-13 23:34:45] DEBUG [django.db.backends:111] (0.119) 
+            SELECT
+                c.conname,
+                array(
+                    SELECT attname
+                    FROM (
+                        SELECT unnest(c.conkey) AS colid,
+                               generate_series(1, array_length(c.conkey, 1)) AS arridx
+                    ) AS cols
+                    JOIN pg_attribute AS ca ON cols.colid = ca.attnum
+                    WHERE ca.attrelid = c.conrelid
+                    ORDER BY cols.arridx
+                ),
+                c.contype,
+                (SELECT fkc.relname || '.' || fka.attname
+                FROM pg_attribute AS fka
+                JOIN pg_class AS fkc ON fka.attrelid = fkc.oid
+                WHERE fka.attrelid = c.confrelid AND fka.attnum = c.confkey[1]),
+                cl.reloptions
+            FROM pg_constraint AS c
+            JOIN pg_class AS cl ON c.conrelid = cl.oid
+            JOIN pg_namespace AS ns ON cl.relnamespace = ns.oid
+            WHERE ns.nspname = 'public' AND cl.relname = 'oauth2_provider_refreshtoken'
+        ; args=['public', 'oauth2_provider_refreshtoken']
+[2017-12-13 23:34:45] DEBUG [django.db.backends:111] (0.117) 
+            SELECT
+                indexname, array_agg(attname ORDER BY rnum), indisunique, indisprimary,
+                array_agg(ordering ORDER BY rnum), amname, exprdef, s2.attoptions
+            FROM (
+                SELECT
+                    row_number() OVER () as rnum, c2.relname as indexname,
+                    idx.*, attr.attname, am.amname,
+                    CASE
+                        WHEN idx.indexprs IS NOT NULL THEN
+                            pg_get_indexdef(idx.indexrelid)
+                    END AS exprdef,
+                    CASE am.amname
+                        WHEN 'btree' THEN
+                            CASE (option & 1)
+                                WHEN 1 THEN 'DESC' ELSE 'ASC'
+                            END
+                    END as ordering,
+                    c2.reloptions as attoptions
+                FROM (
+                    SELECT
+                        *, unnest(i.indkey) as key, unnest(i.indoption) as option
+                    FROM pg_index i
+                ) idx
+                LEFT JOIN pg_class c ON idx.indrelid = c.oid
+                LEFT JOIN pg_class c2 ON idx.indexrelid = c2.oid
+                LEFT JOIN pg_am am ON c2.relam = am.oid
+                LEFT JOIN pg_attribute attr ON attr.attrelid = c.oid AND attr.attnum = idx.key
+                WHERE c.relname = 'oauth2_provider_refreshtoken'
+            ) s2
+            GROUP BY indexname, indisunique, indisprimary, amname, exprdef, attoptions;
+        ; args=['oauth2_provider_refreshtoken']
+[2017-12-13 23:34:45] DEBUG [django.db.backends.schema:108] DROP INDEX IF EXISTS "oauth2_provider_refreshtoken_token_d090daa4"; (params ())
+[2017-12-13 23:34:45] DEBUG [django.db.backends:111] (0.114) DROP INDEX IF EXISTS "oauth2_provider_refreshtoken_token_d090daa4"; args=()
+[2017-12-13 23:34:45] DEBUG [django.db.backends.schema:108] DROP INDEX IF EXISTS "oauth2_provider_refreshtoken_token_d090daa4_like"; (params ())
+[2017-12-13 23:34:45] DEBUG [django.db.backends:111] (0.115) DROP INDEX IF EXISTS "oauth2_provider_refreshtoken_token_d090daa4_like"; args=()
+[2017-12-13 23:34:45] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_refreshtoken" ADD CONSTRAINT oauth2_provider_refreshtoken_token_d090daa4_uniq UNIQUE ("token"); (params ())
+[2017-12-13 23:34:45] DEBUG [django.db.backends:111] (0.117) ALTER TABLE "oauth2_provider_refreshtoken" ADD CONSTRAINT oauth2_provider_refreshtoken_token_d090daa4_uniq UNIQUE ("token"); args=()
+[2017-12-13 23:34:45] DEBUG [django.db.backends.schema:108] CREATE INDEX "oauth2_provider_refreshtoken_token_d090daa4_like" ON "oauth2_provider_refreshtoken" ("token" varchar_pattern_ops); (params ())
+[2017-12-13 23:34:45] DEBUG [django.db.backends:111] (0.116) CREATE INDEX "oauth2_provider_refreshtoken_token_d090daa4_like" ON "oauth2_provider_refreshtoken" ("token" varchar_pattern_ops); args=()
+[2017-12-13 23:34:46] DEBUG [django.db.backends:111] (0.113) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:46] DEBUG [django.db.backends:111] (0.228) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('oauth2_provider', '0004_auto_20160525_1623', '2017-12-14T04:34:46.176546+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('oauth2_provider', '0004_auto_20160525_1623', datetime.datetime(2017, 12, 14, 4, 34, 46, 176546, tzinfo=<UTC>))
+[2017-12-13 23:34:46] DEBUG [django.db.backends:111] (0.228) 
+            SELECT
+                c.conname,
+                array(
+                    SELECT attname
+                    FROM (
+                        SELECT unnest(c.conkey) AS colid,
+                               generate_series(1, array_length(c.conkey, 1)) AS arridx
+                    ) AS cols
+                    JOIN pg_attribute AS ca ON cols.colid = ca.attnum
+                    WHERE ca.attrelid = c.conrelid
+                    ORDER BY cols.arridx
+                ),
+                c.contype,
+                (SELECT fkc.relname || '.' || fka.attname
+                FROM pg_attribute AS fka
+                JOIN pg_class AS fkc ON fka.attrelid = fkc.oid
+                WHERE fka.attrelid = c.confrelid AND fka.attnum = c.confkey[1]),
+                cl.reloptions
+            FROM pg_constraint AS c
+            JOIN pg_class AS cl ON c.conrelid = cl.oid
+            JOIN pg_namespace AS ns ON cl.relnamespace = ns.oid
+            WHERE ns.nspname = 'public' AND cl.relname = 'oauth2_provider_accesstoken'
+        ; args=['public', 'oauth2_provider_accesstoken']
+[2017-12-13 23:34:46] DEBUG [django.db.backends:111] (0.116) 
+            SELECT
+                indexname, array_agg(attname ORDER BY rnum), indisunique, indisprimary,
+                array_agg(ordering ORDER BY rnum), amname, exprdef, s2.attoptions
+            FROM (
+                SELECT
+                    row_number() OVER () as rnum, c2.relname as indexname,
+                    idx.*, attr.attname, am.amname,
+                    CASE
+                        WHEN idx.indexprs IS NOT NULL THEN
+                            pg_get_indexdef(idx.indexrelid)
+                    END AS exprdef,
+                    CASE am.amname
+                        WHEN 'btree' THEN
+                            CASE (option & 1)
+                                WHEN 1 THEN 'DESC' ELSE 'ASC'
+                            END
+                    END as ordering,
+                    c2.reloptions as attoptions
+                FROM (
+                    SELECT
+                        *, unnest(i.indkey) as key, unnest(i.indoption) as option
+                    FROM pg_index i
+                ) idx
+                LEFT JOIN pg_class c ON idx.indrelid = c.oid
+                LEFT JOIN pg_class c2 ON idx.indexrelid = c2.oid
+                LEFT JOIN pg_am am ON c2.relam = am.oid
+                LEFT JOIN pg_attribute attr ON attr.attrelid = c.oid AND attr.attnum = idx.key
+                WHERE c.relname = 'oauth2_provider_accesstoken'
+            ) s2
+            GROUP BY indexname, indisunique, indisprimary, amname, exprdef, attoptions;
+        ; args=['oauth2_provider_accesstoken']
+[2017-12-13 23:34:46] DEBUG [django.db.backends.schema:108] SET CONSTRAINTS "oauth2_provider_acce_application_id_b22886e1_fk_oauth2_pr" IMMEDIATE; ALTER TABLE "oauth2_provider_accesstoken" DROP CONSTRAINT "oauth2_provider_acce_application_id_b22886e1_fk_oauth2_pr"; (params ())
+[2017-12-13 23:34:47] DEBUG [django.db.backends:111] (0.122) SET CONSTRAINTS "oauth2_provider_acce_application_id_b22886e1_fk_oauth2_pr" IMMEDIATE; ALTER TABLE "oauth2_provider_accesstoken" DROP CONSTRAINT "oauth2_provider_acce_application_id_b22886e1_fk_oauth2_pr"; args=()
+[2017-12-13 23:34:47] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_accesstoken" ALTER COLUMN "application_id" DROP NOT NULL; (params [])
+[2017-12-13 23:34:47] DEBUG [django.db.backends:111] (0.113) ALTER TABLE "oauth2_provider_accesstoken" ALTER COLUMN "application_id" DROP NOT NULL; args=[]
+[2017-12-13 23:34:47] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_accesstoken" ADD CONSTRAINT "oauth2_provider_acce_application_id_b22886e1_fk_oauth2_pr" FOREIGN KEY ("application_id") REFERENCES "oauth2_provider_application" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:47] DEBUG [django.db.backends:111] (0.118) ALTER TABLE "oauth2_provider_accesstoken" ADD CONSTRAINT "oauth2_provider_acce_application_id_b22886e1_fk_oauth2_pr" FOREIGN KEY ("application_id") REFERENCES "oauth2_provider_application" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:47] DEBUG [django.db.backends:111] (0.115) 
+            SELECT
+                c.conname,
+                array(
+                    SELECT attname
+                    FROM (
+                        SELECT unnest(c.conkey) AS colid,
+                               generate_series(1, array_length(c.conkey, 1)) AS arridx
+                    ) AS cols
+                    JOIN pg_attribute AS ca ON cols.colid = ca.attnum
+                    WHERE ca.attrelid = c.conrelid
+                    ORDER BY cols.arridx
+                ),
+                c.contype,
+                (SELECT fkc.relname || '.' || fka.attname
+                FROM pg_attribute AS fka
+                JOIN pg_class AS fkc ON fka.attrelid = fkc.oid
+                WHERE fka.attrelid = c.confrelid AND fka.attnum = c.confkey[1]),
+                cl.reloptions
+            FROM pg_constraint AS c
+            JOIN pg_class AS cl ON c.conrelid = cl.oid
+            JOIN pg_namespace AS ns ON cl.relnamespace = ns.oid
+            WHERE ns.nspname = 'public' AND cl.relname = 'oauth2_provider_refreshtoken'
+        ; args=['public', 'oauth2_provider_refreshtoken']
+[2017-12-13 23:34:47] DEBUG [django.db.backends:111] (0.118) 
+            SELECT
+                indexname, array_agg(attname ORDER BY rnum), indisunique, indisprimary,
+                array_agg(ordering ORDER BY rnum), amname, exprdef, s2.attoptions
+            FROM (
+                SELECT
+                    row_number() OVER () as rnum, c2.relname as indexname,
+                    idx.*, attr.attname, am.amname,
+                    CASE
+                        WHEN idx.indexprs IS NOT NULL THEN
+                            pg_get_indexdef(idx.indexrelid)
+                    END AS exprdef,
+                    CASE am.amname
+                        WHEN 'btree' THEN
+                            CASE (option & 1)
+                                WHEN 1 THEN 'DESC' ELSE 'ASC'
+                            END
+                    END as ordering,
+                    c2.reloptions as attoptions
+                FROM (
+                    SELECT
+                        *, unnest(i.indkey) as key, unnest(i.indoption) as option
+                    FROM pg_index i
+                ) idx
+                LEFT JOIN pg_class c ON idx.indrelid = c.oid
+                LEFT JOIN pg_class c2 ON idx.indexrelid = c2.oid
+                LEFT JOIN pg_am am ON c2.relam = am.oid
+                LEFT JOIN pg_attribute attr ON attr.attrelid = c.oid AND attr.attnum = idx.key
+                WHERE c.relname = 'oauth2_provider_refreshtoken'
+            ) s2
+            GROUP BY indexname, indisunique, indisprimary, amname, exprdef, attoptions;
+        ; args=['oauth2_provider_refreshtoken']
+[2017-12-13 23:34:47] DEBUG [django.db.backends.schema:108] SET CONSTRAINTS "oauth2_provider_refr_access_token_id_775e84e8_fk_oauth2_pr" IMMEDIATE; ALTER TABLE "oauth2_provider_refreshtoken" DROP CONSTRAINT "oauth2_provider_refr_access_token_id_775e84e8_fk_oauth2_pr"; (params ())
+[2017-12-13 23:34:47] DEBUG [django.db.backends:111] (0.114) SET CONSTRAINTS "oauth2_provider_refr_access_token_id_775e84e8_fk_oauth2_pr" IMMEDIATE; ALTER TABLE "oauth2_provider_refreshtoken" DROP CONSTRAINT "oauth2_provider_refr_access_token_id_775e84e8_fk_oauth2_pr"; args=()
+[2017-12-13 23:34:47] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_accesstoken" ALTER COLUMN "id" TYPE bigint USING "id"::bigint; (params [])
+[2017-12-13 23:34:47] DEBUG [django.db.backends:111] (0.131) ALTER TABLE "oauth2_provider_accesstoken" ALTER COLUMN "id" TYPE bigint USING "id"::bigint; args=[]
+[2017-12-13 23:34:47] DEBUG [django.db.backends.schema:108] DROP SEQUENCE IF EXISTS "oauth2_provider_accesstoken_id_seq" CASCADE; (params [])
+[2017-12-13 23:34:47] DEBUG [django.db.backends:111] (0.113) DROP SEQUENCE IF EXISTS "oauth2_provider_accesstoken_id_seq" CASCADE; args=[]
+[2017-12-13 23:34:47] DEBUG [django.db.backends.schema:108] CREATE SEQUENCE "oauth2_provider_accesstoken_id_seq"; (params [])
+[2017-12-13 23:34:47] DEBUG [django.db.backends:111] (0.113) CREATE SEQUENCE "oauth2_provider_accesstoken_id_seq"; args=[]
+[2017-12-13 23:34:47] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_accesstoken" ALTER COLUMN "id" SET DEFAULT nextval('"oauth2_provider_accesstoken_id_seq"'); (params [])
+[2017-12-13 23:34:48] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_accesstoken" ALTER COLUMN "id" SET DEFAULT nextval('"oauth2_provider_accesstoken_id_seq"'); args=[]
+[2017-12-13 23:34:48] DEBUG [django.db.backends.schema:108] SELECT setval('"oauth2_provider_accesstoken_id_seq"', MAX("id")) FROM "oauth2_provider_accesstoken"; (params [])
+[2017-12-13 23:34:48] DEBUG [django.db.backends:111] (0.116) SELECT setval('"oauth2_provider_accesstoken_id_seq"', MAX("id")) FROM "oauth2_provider_accesstoken"; args=[]
+[2017-12-13 23:34:48] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_refreshtoken" ALTER COLUMN "access_token_id" TYPE bigint USING "access_token_id"::bigint; (params [])
+[2017-12-13 23:34:48] DEBUG [django.db.backends:111] (0.130) ALTER TABLE "oauth2_provider_refreshtoken" ALTER COLUMN "access_token_id" TYPE bigint USING "access_token_id"::bigint; args=[]
+[2017-12-13 23:34:48] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_refreshtoken" ADD CONSTRAINT "oauth2_provider_refreshtoken_access_token_id_775e84e8_fk" FOREIGN KEY ("access_token_id") REFERENCES "oauth2_provider_accesstoken" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:48] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_refreshtoken" ADD CONSTRAINT "oauth2_provider_refreshtoken_access_token_id_775e84e8_fk" FOREIGN KEY ("access_token_id") REFERENCES "oauth2_provider_accesstoken" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:48] DEBUG [django.db.backends:111] (0.118) 
+            SELECT
+                c.conname,
+                array(
+                    SELECT attname
+                    FROM (
+                        SELECT unnest(c.conkey) AS colid,
+                               generate_series(1, array_length(c.conkey, 1)) AS arridx
+                    ) AS cols
+                    JOIN pg_attribute AS ca ON cols.colid = ca.attnum
+                    WHERE ca.attrelid = c.conrelid
+                    ORDER BY cols.arridx
+                ),
+                c.contype,
+                (SELECT fkc.relname || '.' || fka.attname
+                FROM pg_attribute AS fka
+                JOIN pg_class AS fkc ON fka.attrelid = fkc.oid
+                WHERE fka.attrelid = c.confrelid AND fka.attnum = c.confkey[1]),
+                cl.reloptions
+            FROM pg_constraint AS c
+            JOIN pg_class AS cl ON c.conrelid = cl.oid
+            JOIN pg_namespace AS ns ON cl.relnamespace = ns.oid
+            WHERE ns.nspname = 'public' AND cl.relname = 'oauth2_provider_accesstoken'
+        ; args=['public', 'oauth2_provider_accesstoken']
+[2017-12-13 23:34:48] DEBUG [django.db.backends:111] (0.117) 
+            SELECT
+                indexname, array_agg(attname ORDER BY rnum), indisunique, indisprimary,
+                array_agg(ordering ORDER BY rnum), amname, exprdef, s2.attoptions
+            FROM (
+                SELECT
+                    row_number() OVER () as rnum, c2.relname as indexname,
+                    idx.*, attr.attname, am.amname,
+                    CASE
+                        WHEN idx.indexprs IS NOT NULL THEN
+                            pg_get_indexdef(idx.indexrelid)
+                    END AS exprdef,
+                    CASE am.amname
+                        WHEN 'btree' THEN
+                            CASE (option & 1)
+                                WHEN 1 THEN 'DESC' ELSE 'ASC'
+                            END
+                    END as ordering,
+                    c2.reloptions as attoptions
+                FROM (
+                    SELECT
+                        *, unnest(i.indkey) as key, unnest(i.indoption) as option
+                    FROM pg_index i
+                ) idx
+                LEFT JOIN pg_class c ON idx.indrelid = c.oid
+                LEFT JOIN pg_class c2 ON idx.indexrelid = c2.oid
+                LEFT JOIN pg_am am ON c2.relam = am.oid
+                LEFT JOIN pg_attribute attr ON attr.attrelid = c.oid AND attr.attnum = idx.key
+                WHERE c.relname = 'oauth2_provider_accesstoken'
+            ) s2
+            GROUP BY indexname, indisunique, indisprimary, amname, exprdef, attoptions;
+        ; args=['oauth2_provider_accesstoken']
+[2017-12-13 23:34:48] DEBUG [django.db.backends.schema:108] SET CONSTRAINTS "oauth2_provider_accesstoken_user_id_6e4c9a65_fk_core_user_id" IMMEDIATE; ALTER TABLE "oauth2_provider_accesstoken" DROP CONSTRAINT "oauth2_provider_accesstoken_user_id_6e4c9a65_fk_core_user_id"; (params ())
+[2017-12-13 23:34:48] DEBUG [django.db.backends:111] (0.114) SET CONSTRAINTS "oauth2_provider_accesstoken_user_id_6e4c9a65_fk_core_user_id" IMMEDIATE; ALTER TABLE "oauth2_provider_accesstoken" DROP CONSTRAINT "oauth2_provider_accesstoken_user_id_6e4c9a65_fk_core_user_id"; args=()
+[2017-12-13 23:34:48] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_accesstoken" ADD CONSTRAINT "oauth2_provider_accesstoken_user_id_6e4c9a65_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:48] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_accesstoken" ADD CONSTRAINT "oauth2_provider_accesstoken_user_id_6e4c9a65_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:49] DEBUG [django.db.backends:111] (0.115) 
+            SELECT
+                c.conname,
+                array(
+                    SELECT attname
+                    FROM (
+                        SELECT unnest(c.conkey) AS colid,
+                               generate_series(1, array_length(c.conkey, 1)) AS arridx
+                    ) AS cols
+                    JOIN pg_attribute AS ca ON cols.colid = ca.attnum
+                    WHERE ca.attrelid = c.conrelid
+                    ORDER BY cols.arridx
+                ),
+                c.contype,
+                (SELECT fkc.relname || '.' || fka.attname
+                FROM pg_attribute AS fka
+                JOIN pg_class AS fkc ON fka.attrelid = fkc.oid
+                WHERE fka.attrelid = c.confrelid AND fka.attnum = c.confkey[1]),
+                cl.reloptions
+            FROM pg_constraint AS c
+            JOIN pg_class AS cl ON c.conrelid = cl.oid
+            JOIN pg_namespace AS ns ON cl.relnamespace = ns.oid
+            WHERE ns.nspname = 'public' AND cl.relname = 'oauth2_provider_accesstoken'
+        ; args=['public', 'oauth2_provider_accesstoken']
+[2017-12-13 23:34:49] DEBUG [django.db.backends:111] (0.116) 
+            SELECT
+                indexname, array_agg(attname ORDER BY rnum), indisunique, indisprimary,
+                array_agg(ordering ORDER BY rnum), amname, exprdef, s2.attoptions
+            FROM (
+                SELECT
+                    row_number() OVER () as rnum, c2.relname as indexname,
+                    idx.*, attr.attname, am.amname,
+                    CASE
+                        WHEN idx.indexprs IS NOT NULL THEN
+                            pg_get_indexdef(idx.indexrelid)
+                    END AS exprdef,
+                    CASE am.amname
+                        WHEN 'btree' THEN
+                            CASE (option & 1)
+                                WHEN 1 THEN 'DESC' ELSE 'ASC'
+                            END
+                    END as ordering,
+                    c2.reloptions as attoptions
+                FROM (
+                    SELECT
+                        *, unnest(i.indkey) as key, unnest(i.indoption) as option
+                    FROM pg_index i
+                ) idx
+                LEFT JOIN pg_class c ON idx.indrelid = c.oid
+                LEFT JOIN pg_class c2 ON idx.indexrelid = c2.oid
+                LEFT JOIN pg_am am ON c2.relam = am.oid
+                LEFT JOIN pg_attribute attr ON attr.attrelid = c.oid AND attr.attnum = idx.key
+                WHERE c.relname = 'oauth2_provider_accesstoken'
+            ) s2
+            GROUP BY indexname, indisunique, indisprimary, amname, exprdef, attoptions;
+        ; args=['oauth2_provider_accesstoken']
+[2017-12-13 23:34:49] DEBUG [django.db.backends.schema:108] SET CONSTRAINTS "oauth2_provider_acce_application_id_b22886e1_fk_oauth2_pr" IMMEDIATE; ALTER TABLE "oauth2_provider_accesstoken" DROP CONSTRAINT "oauth2_provider_acce_application_id_b22886e1_fk_oauth2_pr"; (params ())
+[2017-12-13 23:34:49] DEBUG [django.db.backends:111] (0.114) SET CONSTRAINTS "oauth2_provider_acce_application_id_b22886e1_fk_oauth2_pr" IMMEDIATE; ALTER TABLE "oauth2_provider_accesstoken" DROP CONSTRAINT "oauth2_provider_acce_application_id_b22886e1_fk_oauth2_pr"; args=()
+[2017-12-13 23:34:49] DEBUG [django.db.backends:111] (0.117) 
+            SELECT
+                c.conname,
+                array(
+                    SELECT attname
+                    FROM (
+                        SELECT unnest(c.conkey) AS colid,
+                               generate_series(1, array_length(c.conkey, 1)) AS arridx
+                    ) AS cols
+                    JOIN pg_attribute AS ca ON cols.colid = ca.attnum
+                    WHERE ca.attrelid = c.conrelid
+                    ORDER BY cols.arridx
+                ),
+                c.contype,
+                (SELECT fkc.relname || '.' || fka.attname
+                FROM pg_attribute AS fka
+                JOIN pg_class AS fkc ON fka.attrelid = fkc.oid
+                WHERE fka.attrelid = c.confrelid AND fka.attnum = c.confkey[1]),
+                cl.reloptions
+            FROM pg_constraint AS c
+            JOIN pg_class AS cl ON c.conrelid = cl.oid
+            JOIN pg_namespace AS ns ON cl.relnamespace = ns.oid
+            WHERE ns.nspname = 'public' AND cl.relname = 'oauth2_provider_grant'
+        ; args=['public', 'oauth2_provider_grant']
+[2017-12-13 23:34:49] DEBUG [django.db.backends:111] (0.118) 
+            SELECT
+                indexname, array_agg(attname ORDER BY rnum), indisunique, indisprimary,
+                array_agg(ordering ORDER BY rnum), amname, exprdef, s2.attoptions
+            FROM (
+                SELECT
+                    row_number() OVER () as rnum, c2.relname as indexname,
+                    idx.*, attr.attname, am.amname,
+                    CASE
+                        WHEN idx.indexprs IS NOT NULL THEN
+                            pg_get_indexdef(idx.indexrelid)
+                    END AS exprdef,
+                    CASE am.amname
+                        WHEN 'btree' THEN
+                            CASE (option & 1)
+                                WHEN 1 THEN 'DESC' ELSE 'ASC'
+                            END
+                    END as ordering,
+                    c2.reloptions as attoptions
+                FROM (
+                    SELECT
+                        *, unnest(i.indkey) as key, unnest(i.indoption) as option
+                    FROM pg_index i
+                ) idx
+                LEFT JOIN pg_class c ON idx.indrelid = c.oid
+                LEFT JOIN pg_class c2 ON idx.indexrelid = c2.oid
+                LEFT JOIN pg_am am ON c2.relam = am.oid
+                LEFT JOIN pg_attribute attr ON attr.attrelid = c.oid AND attr.attnum = idx.key
+                WHERE c.relname = 'oauth2_provider_grant'
+            ) s2
+            GROUP BY indexname, indisunique, indisprimary, amname, exprdef, attoptions;
+        ; args=['oauth2_provider_grant']
+[2017-12-13 23:34:49] DEBUG [django.db.backends.schema:108] SET CONSTRAINTS "oauth2_provider_gran_application_id_81923564_fk_oauth2_pr" IMMEDIATE; ALTER TABLE "oauth2_provider_grant" DROP CONSTRAINT "oauth2_provider_gran_application_id_81923564_fk_oauth2_pr"; (params ())
+[2017-12-13 23:34:49] DEBUG [django.db.backends:111] (0.116) SET CONSTRAINTS "oauth2_provider_gran_application_id_81923564_fk_oauth2_pr" IMMEDIATE; ALTER TABLE "oauth2_provider_grant" DROP CONSTRAINT "oauth2_provider_gran_application_id_81923564_fk_oauth2_pr"; args=()
+[2017-12-13 23:34:49] DEBUG [django.db.backends:111] (0.115) 
+            SELECT
+                c.conname,
+                array(
+                    SELECT attname
+                    FROM (
+                        SELECT unnest(c.conkey) AS colid,
+                               generate_series(1, array_length(c.conkey, 1)) AS arridx
+                    ) AS cols
+                    JOIN pg_attribute AS ca ON cols.colid = ca.attnum
+                    WHERE ca.attrelid = c.conrelid
+                    ORDER BY cols.arridx
+                ),
+                c.contype,
+                (SELECT fkc.relname || '.' || fka.attname
+                FROM pg_attribute AS fka
+                JOIN pg_class AS fkc ON fka.attrelid = fkc.oid
+                WHERE fka.attrelid = c.confrelid AND fka.attnum = c.confkey[1]),
+                cl.reloptions
+            FROM pg_constraint AS c
+            JOIN pg_class AS cl ON c.conrelid = cl.oid
+            JOIN pg_namespace AS ns ON cl.relnamespace = ns.oid
+            WHERE ns.nspname = 'public' AND cl.relname = 'oauth2_provider_refreshtoken'
+        ; args=['public', 'oauth2_provider_refreshtoken']
+[2017-12-13 23:34:49] DEBUG [django.db.backends:111] (0.117) 
+            SELECT
+                indexname, array_agg(attname ORDER BY rnum), indisunique, indisprimary,
+                array_agg(ordering ORDER BY rnum), amname, exprdef, s2.attoptions
+            FROM (
+                SELECT
+                    row_number() OVER () as rnum, c2.relname as indexname,
+                    idx.*, attr.attname, am.amname,
+                    CASE
+                        WHEN idx.indexprs IS NOT NULL THEN
+                            pg_get_indexdef(idx.indexrelid)
+                    END AS exprdef,
+                    CASE am.amname
+                        WHEN 'btree' THEN
+                            CASE (option & 1)
+                                WHEN 1 THEN 'DESC' ELSE 'ASC'
+                            END
+                    END as ordering,
+                    c2.reloptions as attoptions
+                FROM (
+                    SELECT
+                        *, unnest(i.indkey) as key, unnest(i.indoption) as option
+                    FROM pg_index i
+                ) idx
+                LEFT JOIN pg_class c ON idx.indrelid = c.oid
+                LEFT JOIN pg_class c2 ON idx.indexrelid = c2.oid
+                LEFT JOIN pg_am am ON c2.relam = am.oid
+                LEFT JOIN pg_attribute attr ON attr.attrelid = c.oid AND attr.attnum = idx.key
+                WHERE c.relname = 'oauth2_provider_refreshtoken'
+            ) s2
+            GROUP BY indexname, indisunique, indisprimary, amname, exprdef, attoptions;
+        ; args=['oauth2_provider_refreshtoken']
+[2017-12-13 23:34:49] DEBUG [django.db.backends.schema:108] SET CONSTRAINTS "oauth2_provider_refr_application_id_2d1c311b_fk_oauth2_pr" IMMEDIATE; ALTER TABLE "oauth2_provider_refreshtoken" DROP CONSTRAINT "oauth2_provider_refr_application_id_2d1c311b_fk_oauth2_pr"; (params ())
+[2017-12-13 23:34:50] DEBUG [django.db.backends:111] (0.116) SET CONSTRAINTS "oauth2_provider_refr_application_id_2d1c311b_fk_oauth2_pr" IMMEDIATE; ALTER TABLE "oauth2_provider_refreshtoken" DROP CONSTRAINT "oauth2_provider_refr_application_id_2d1c311b_fk_oauth2_pr"; args=()
+[2017-12-13 23:34:50] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_application" ALTER COLUMN "id" TYPE bigint USING "id"::bigint; (params [])
+[2017-12-13 23:34:50] DEBUG [django.db.backends:111] (0.134) ALTER TABLE "oauth2_provider_application" ALTER COLUMN "id" TYPE bigint USING "id"::bigint; args=[]
+[2017-12-13 23:34:50] DEBUG [django.db.backends.schema:108] DROP SEQUENCE IF EXISTS "oauth2_provider_application_id_seq" CASCADE; (params [])
+[2017-12-13 23:34:50] DEBUG [django.db.backends:111] (0.119) DROP SEQUENCE IF EXISTS "oauth2_provider_application_id_seq" CASCADE; args=[]
+[2017-12-13 23:34:50] DEBUG [django.db.backends.schema:108] CREATE SEQUENCE "oauth2_provider_application_id_seq"; (params [])
+[2017-12-13 23:34:50] DEBUG [django.db.backends:111] (0.114) CREATE SEQUENCE "oauth2_provider_application_id_seq"; args=[]
+[2017-12-13 23:34:50] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_application" ALTER COLUMN "id" SET DEFAULT nextval('"oauth2_provider_application_id_seq"'); (params [])
+[2017-12-13 23:34:50] DEBUG [django.db.backends:111] (0.114) ALTER TABLE "oauth2_provider_application" ALTER COLUMN "id" SET DEFAULT nextval('"oauth2_provider_application_id_seq"'); args=[]
+[2017-12-13 23:34:50] DEBUG [django.db.backends.schema:108] SELECT setval('"oauth2_provider_application_id_seq"', MAX("id")) FROM "oauth2_provider_application"; (params [])
+[2017-12-13 23:34:50] DEBUG [django.db.backends:111] (0.116) SELECT setval('"oauth2_provider_application_id_seq"', MAX("id")) FROM "oauth2_provider_application"; args=[]
+[2017-12-13 23:34:50] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_accesstoken" ALTER COLUMN "application_id" TYPE bigint USING "application_id"::bigint; (params [])
+[2017-12-13 23:34:50] DEBUG [django.db.backends:111] (0.131) ALTER TABLE "oauth2_provider_accesstoken" ALTER COLUMN "application_id" TYPE bigint USING "application_id"::bigint; args=[]
+[2017-12-13 23:34:50] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_grant" ALTER COLUMN "application_id" TYPE bigint USING "application_id"::bigint; (params [])
+[2017-12-13 23:34:50] DEBUG [django.db.backends:111] (0.132) ALTER TABLE "oauth2_provider_grant" ALTER COLUMN "application_id" TYPE bigint USING "application_id"::bigint; args=[]
+[2017-12-13 23:34:50] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_refreshtoken" ALTER COLUMN "application_id" TYPE bigint USING "application_id"::bigint; (params [])
+[2017-12-13 23:34:51] DEBUG [django.db.backends:111] (0.128) ALTER TABLE "oauth2_provider_refreshtoken" ALTER COLUMN "application_id" TYPE bigint USING "application_id"::bigint; args=[]
+[2017-12-13 23:34:51] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_accesstoken" ADD CONSTRAINT "oauth2_provider_accesstoken_application_id_b22886e1_fk" FOREIGN KEY ("application_id") REFERENCES "oauth2_provider_application" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:51] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_accesstoken" ADD CONSTRAINT "oauth2_provider_accesstoken_application_id_b22886e1_fk" FOREIGN KEY ("application_id") REFERENCES "oauth2_provider_application" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:51] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_grant" ADD CONSTRAINT "oauth2_provider_grant_application_id_81923564_fk" FOREIGN KEY ("application_id") REFERENCES "oauth2_provider_application" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:51] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_grant" ADD CONSTRAINT "oauth2_provider_grant_application_id_81923564_fk" FOREIGN KEY ("application_id") REFERENCES "oauth2_provider_application" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:51] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_refreshtoken" ADD CONSTRAINT "oauth2_provider_refreshtoken_application_id_2d1c311b_fk" FOREIGN KEY ("application_id") REFERENCES "oauth2_provider_application" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:51] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_refreshtoken" ADD CONSTRAINT "oauth2_provider_refreshtoken_application_id_2d1c311b_fk" FOREIGN KEY ("application_id") REFERENCES "oauth2_provider_application" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:51] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_grant" ALTER COLUMN "id" TYPE bigint USING "id"::bigint; (params [])
+[2017-12-13 23:34:51] DEBUG [django.db.backends:111] (0.129) ALTER TABLE "oauth2_provider_grant" ALTER COLUMN "id" TYPE bigint USING "id"::bigint; args=[]
+[2017-12-13 23:34:51] DEBUG [django.db.backends.schema:108] DROP SEQUENCE IF EXISTS "oauth2_provider_grant_id_seq" CASCADE; (params [])
+[2017-12-13 23:34:51] DEBUG [django.db.backends:111] (0.114) DROP SEQUENCE IF EXISTS "oauth2_provider_grant_id_seq" CASCADE; args=[]
+[2017-12-13 23:34:51] DEBUG [django.db.backends.schema:108] CREATE SEQUENCE "oauth2_provider_grant_id_seq"; (params [])
+[2017-12-13 23:34:51] DEBUG [django.db.backends:111] (0.114) CREATE SEQUENCE "oauth2_provider_grant_id_seq"; args=[]
+[2017-12-13 23:34:51] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_grant" ALTER COLUMN "id" SET DEFAULT nextval('"oauth2_provider_grant_id_seq"'); (params [])
+[2017-12-13 23:34:51] DEBUG [django.db.backends:111] (0.114) ALTER TABLE "oauth2_provider_grant" ALTER COLUMN "id" SET DEFAULT nextval('"oauth2_provider_grant_id_seq"'); args=[]
+[2017-12-13 23:34:51] DEBUG [django.db.backends.schema:108] SELECT setval('"oauth2_provider_grant_id_seq"', MAX("id")) FROM "oauth2_provider_grant"; (params [])
+[2017-12-13 23:34:52] DEBUG [django.db.backends:111] (0.116) SELECT setval('"oauth2_provider_grant_id_seq"', MAX("id")) FROM "oauth2_provider_grant"; args=[]
+[2017-12-13 23:34:52] DEBUG [django.db.backends:111] (0.116) 
+            SELECT
+                c.conname,
+                array(
+                    SELECT attname
+                    FROM (
+                        SELECT unnest(c.conkey) AS colid,
+                               generate_series(1, array_length(c.conkey, 1)) AS arridx
+                    ) AS cols
+                    JOIN pg_attribute AS ca ON cols.colid = ca.attnum
+                    WHERE ca.attrelid = c.conrelid
+                    ORDER BY cols.arridx
+                ),
+                c.contype,
+                (SELECT fkc.relname || '.' || fka.attname
+                FROM pg_attribute AS fka
+                JOIN pg_class AS fkc ON fka.attrelid = fkc.oid
+                WHERE fka.attrelid = c.confrelid AND fka.attnum = c.confkey[1]),
+                cl.reloptions
+            FROM pg_constraint AS c
+            JOIN pg_class AS cl ON c.conrelid = cl.oid
+            JOIN pg_namespace AS ns ON cl.relnamespace = ns.oid
+            WHERE ns.nspname = 'public' AND cl.relname = 'oauth2_provider_grant'
+        ; args=['public', 'oauth2_provider_grant']
+[2017-12-13 23:34:52] DEBUG [django.db.backends:111] (0.116) 
+            SELECT
+                indexname, array_agg(attname ORDER BY rnum), indisunique, indisprimary,
+                array_agg(ordering ORDER BY rnum), amname, exprdef, s2.attoptions
+            FROM (
+                SELECT
+                    row_number() OVER () as rnum, c2.relname as indexname,
+                    idx.*, attr.attname, am.amname,
+                    CASE
+                        WHEN idx.indexprs IS NOT NULL THEN
+                            pg_get_indexdef(idx.indexrelid)
+                    END AS exprdef,
+                    CASE am.amname
+                        WHEN 'btree' THEN
+                            CASE (option & 1)
+                                WHEN 1 THEN 'DESC' ELSE 'ASC'
+                            END
+                    END as ordering,
+                    c2.reloptions as attoptions
+                FROM (
+                    SELECT
+                        *, unnest(i.indkey) as key, unnest(i.indoption) as option
+                    FROM pg_index i
+                ) idx
+                LEFT JOIN pg_class c ON idx.indrelid = c.oid
+                LEFT JOIN pg_class c2 ON idx.indexrelid = c2.oid
+                LEFT JOIN pg_am am ON c2.relam = am.oid
+                LEFT JOIN pg_attribute attr ON attr.attrelid = c.oid AND attr.attnum = idx.key
+                WHERE c.relname = 'oauth2_provider_grant'
+            ) s2
+            GROUP BY indexname, indisunique, indisprimary, amname, exprdef, attoptions;
+        ; args=['oauth2_provider_grant']
+[2017-12-13 23:34:52] DEBUG [django.db.backends.schema:108] SET CONSTRAINTS "oauth2_provider_grant_user_id_e8f62af8_fk_core_user_id" IMMEDIATE; ALTER TABLE "oauth2_provider_grant" DROP CONSTRAINT "oauth2_provider_grant_user_id_e8f62af8_fk_core_user_id"; (params ())
+[2017-12-13 23:34:52] DEBUG [django.db.backends:111] (0.116) SET CONSTRAINTS "oauth2_provider_grant_user_id_e8f62af8_fk_core_user_id" IMMEDIATE; ALTER TABLE "oauth2_provider_grant" DROP CONSTRAINT "oauth2_provider_grant_user_id_e8f62af8_fk_core_user_id"; args=()
+[2017-12-13 23:34:52] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_grant" ADD CONSTRAINT "oauth2_provider_grant_user_id_e8f62af8_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:52] DEBUG [django.db.backends:111] (0.114) ALTER TABLE "oauth2_provider_grant" ADD CONSTRAINT "oauth2_provider_grant_user_id_e8f62af8_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:52] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_refreshtoken" ALTER COLUMN "id" TYPE bigint USING "id"::bigint; (params [])
+[2017-12-13 23:34:52] DEBUG [django.db.backends:111] (0.131) ALTER TABLE "oauth2_provider_refreshtoken" ALTER COLUMN "id" TYPE bigint USING "id"::bigint; args=[]
+[2017-12-13 23:34:52] DEBUG [django.db.backends.schema:108] DROP SEQUENCE IF EXISTS "oauth2_provider_refreshtoken_id_seq" CASCADE; (params [])
+[2017-12-13 23:34:52] DEBUG [django.db.backends:111] (0.114) DROP SEQUENCE IF EXISTS "oauth2_provider_refreshtoken_id_seq" CASCADE; args=[]
+[2017-12-13 23:34:52] DEBUG [django.db.backends.schema:108] CREATE SEQUENCE "oauth2_provider_refreshtoken_id_seq"; (params [])
+[2017-12-13 23:34:52] DEBUG [django.db.backends:111] (0.114) CREATE SEQUENCE "oauth2_provider_refreshtoken_id_seq"; args=[]
+[2017-12-13 23:34:52] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_refreshtoken" ALTER COLUMN "id" SET DEFAULT nextval('"oauth2_provider_refreshtoken_id_seq"'); (params [])
+[2017-12-13 23:34:52] DEBUG [django.db.backends:111] (0.116) ALTER TABLE "oauth2_provider_refreshtoken" ALTER COLUMN "id" SET DEFAULT nextval('"oauth2_provider_refreshtoken_id_seq"'); args=[]
+[2017-12-13 23:34:52] DEBUG [django.db.backends.schema:108] SELECT setval('"oauth2_provider_refreshtoken_id_seq"', MAX("id")) FROM "oauth2_provider_refreshtoken"; (params [])
+[2017-12-13 23:34:53] DEBUG [django.db.backends:111] (0.114) SELECT setval('"oauth2_provider_refreshtoken_id_seq"', MAX("id")) FROM "oauth2_provider_refreshtoken"; args=[]
+[2017-12-13 23:34:53] DEBUG [django.db.backends:111] (0.116) 
+            SELECT
+                c.conname,
+                array(
+                    SELECT attname
+                    FROM (
+                        SELECT unnest(c.conkey) AS colid,
+                               generate_series(1, array_length(c.conkey, 1)) AS arridx
+                    ) AS cols
+                    JOIN pg_attribute AS ca ON cols.colid = ca.attnum
+                    WHERE ca.attrelid = c.conrelid
+                    ORDER BY cols.arridx
+                ),
+                c.contype,
+                (SELECT fkc.relname || '.' || fka.attname
+                FROM pg_attribute AS fka
+                JOIN pg_class AS fkc ON fka.attrelid = fkc.oid
+                WHERE fka.attrelid = c.confrelid AND fka.attnum = c.confkey[1]),
+                cl.reloptions
+            FROM pg_constraint AS c
+            JOIN pg_class AS cl ON c.conrelid = cl.oid
+            JOIN pg_namespace AS ns ON cl.relnamespace = ns.oid
+            WHERE ns.nspname = 'public' AND cl.relname = 'oauth2_provider_refreshtoken'
+        ; args=['public', 'oauth2_provider_refreshtoken']
+[2017-12-13 23:34:53] DEBUG [django.db.backends:111] (0.117) 
+            SELECT
+                indexname, array_agg(attname ORDER BY rnum), indisunique, indisprimary,
+                array_agg(ordering ORDER BY rnum), amname, exprdef, s2.attoptions
+            FROM (
+                SELECT
+                    row_number() OVER () as rnum, c2.relname as indexname,
+                    idx.*, attr.attname, am.amname,
+                    CASE
+                        WHEN idx.indexprs IS NOT NULL THEN
+                            pg_get_indexdef(idx.indexrelid)
+                    END AS exprdef,
+                    CASE am.amname
+                        WHEN 'btree' THEN
+                            CASE (option & 1)
+                                WHEN 1 THEN 'DESC' ELSE 'ASC'
+                            END
+                    END as ordering,
+                    c2.reloptions as attoptions
+                FROM (
+                    SELECT
+                        *, unnest(i.indkey) as key, unnest(i.indoption) as option
+                    FROM pg_index i
+                ) idx
+                LEFT JOIN pg_class c ON idx.indrelid = c.oid
+                LEFT JOIN pg_class c2 ON idx.indexrelid = c2.oid
+                LEFT JOIN pg_am am ON c2.relam = am.oid
+                LEFT JOIN pg_attribute attr ON attr.attrelid = c.oid AND attr.attnum = idx.key
+                WHERE c.relname = 'oauth2_provider_refreshtoken'
+            ) s2
+            GROUP BY indexname, indisunique, indisprimary, amname, exprdef, attoptions;
+        ; args=['oauth2_provider_refreshtoken']
+[2017-12-13 23:34:53] DEBUG [django.db.backends.schema:108] SET CONSTRAINTS "oauth2_provider_refreshtoken_user_id_da837fce_fk_core_user_id" IMMEDIATE; ALTER TABLE "oauth2_provider_refreshtoken" DROP CONSTRAINT "oauth2_provider_refreshtoken_user_id_da837fce_fk_core_user_id"; (params ())
+[2017-12-13 23:34:53] DEBUG [django.db.backends:111] (0.117) SET CONSTRAINTS "oauth2_provider_refreshtoken_user_id_da837fce_fk_core_user_id" IMMEDIATE; ALTER TABLE "oauth2_provider_refreshtoken" DROP CONSTRAINT "oauth2_provider_refreshtoken_user_id_da837fce_fk_core_user_id"; args=()
+[2017-12-13 23:34:53] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_refreshtoken" ADD CONSTRAINT "oauth2_provider_refreshtoken_user_id_da837fce_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:53] DEBUG [django.db.backends:111] (0.114) ALTER TABLE "oauth2_provider_refreshtoken" ADD CONSTRAINT "oauth2_provider_refreshtoken_user_id_da837fce_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:53] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_accesstoken" ADD COLUMN "created" timestamp with time zone DEFAULT %s NOT NULL; (params [datetime.datetime(2017, 12, 14, 4, 34, 53, 615514, tzinfo=<UTC>)])
+[2017-12-13 23:34:53] DEBUG [django.db.backends:111] (0.131) ALTER TABLE "oauth2_provider_accesstoken" ADD COLUMN "created" timestamp with time zone DEFAULT '2017-12-14T04:34:53.615514+00:00'::timestamptz NOT NULL; args=[datetime.datetime(2017, 12, 14, 4, 34, 53, 615514, tzinfo=<UTC>)]
+[2017-12-13 23:34:53] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_accesstoken" ALTER COLUMN "created" DROP DEFAULT; (params [])
+[2017-12-13 23:34:53] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_accesstoken" ALTER COLUMN "created" DROP DEFAULT; args=[]
+[2017-12-13 23:34:53] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_accesstoken" ADD COLUMN "updated" timestamp with time zone DEFAULT %s NOT NULL; (params [datetime.datetime(2017, 12, 14, 4, 34, 53, 890569, tzinfo=<UTC>)])
+[2017-12-13 23:34:54] DEBUG [django.db.backends:111] (0.130) ALTER TABLE "oauth2_provider_accesstoken" ADD COLUMN "updated" timestamp with time zone DEFAULT '2017-12-14T04:34:53.890569+00:00'::timestamptz NOT NULL; args=[datetime.datetime(2017, 12, 14, 4, 34, 53, 890569, tzinfo=<UTC>)]
+[2017-12-13 23:34:54] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_accesstoken" ALTER COLUMN "updated" DROP DEFAULT; (params [])
+[2017-12-13 23:34:54] DEBUG [django.db.backends:111] (0.133) ALTER TABLE "oauth2_provider_accesstoken" ALTER COLUMN "updated" DROP DEFAULT; args=[]
+[2017-12-13 23:34:54] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_application" ADD COLUMN "created" timestamp with time zone DEFAULT %s NOT NULL; (params [datetime.datetime(2017, 12, 14, 4, 34, 54, 187070, tzinfo=<UTC>)])
+[2017-12-13 23:34:54] DEBUG [django.db.backends:111] (0.133) ALTER TABLE "oauth2_provider_application" ADD COLUMN "created" timestamp with time zone DEFAULT '2017-12-14T04:34:54.187070+00:00'::timestamptz NOT NULL; args=[datetime.datetime(2017, 12, 14, 4, 34, 54, 187070, tzinfo=<UTC>)]
+[2017-12-13 23:34:54] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_application" ALTER COLUMN "created" DROP DEFAULT; (params [])
+[2017-12-13 23:34:54] DEBUG [django.db.backends:111] (0.203) ALTER TABLE "oauth2_provider_application" ALTER COLUMN "created" DROP DEFAULT; args=[]
+[2017-12-13 23:34:54] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_application" ADD COLUMN "updated" timestamp with time zone DEFAULT %s NOT NULL; (params [datetime.datetime(2017, 12, 14, 4, 34, 54, 566688, tzinfo=<UTC>)])
+[2017-12-13 23:34:54] DEBUG [django.db.backends:111] (0.140) ALTER TABLE "oauth2_provider_application" ADD COLUMN "updated" timestamp with time zone DEFAULT '2017-12-14T04:34:54.566688+00:00'::timestamptz NOT NULL; args=[datetime.datetime(2017, 12, 14, 4, 34, 54, 566688, tzinfo=<UTC>)]
+[2017-12-13 23:34:54] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_application" ALTER COLUMN "updated" DROP DEFAULT; (params [])
+[2017-12-13 23:34:54] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_application" ALTER COLUMN "updated" DROP DEFAULT; args=[]
+[2017-12-13 23:34:54] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_grant" ADD COLUMN "created" timestamp with time zone DEFAULT %s NOT NULL; (params [datetime.datetime(2017, 12, 14, 4, 34, 54, 831761, tzinfo=<UTC>)])
+[2017-12-13 23:34:54] DEBUG [django.db.backends:111] (0.133) ALTER TABLE "oauth2_provider_grant" ADD COLUMN "created" timestamp with time zone DEFAULT '2017-12-14T04:34:54.831761+00:00'::timestamptz NOT NULL; args=[datetime.datetime(2017, 12, 14, 4, 34, 54, 831761, tzinfo=<UTC>)]
+[2017-12-13 23:34:54] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_grant" ALTER COLUMN "created" DROP DEFAULT; (params [])
+[2017-12-13 23:34:55] DEBUG [django.db.backends:111] (0.114) ALTER TABLE "oauth2_provider_grant" ALTER COLUMN "created" DROP DEFAULT; args=[]
+[2017-12-13 23:34:55] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_grant" ADD COLUMN "updated" timestamp with time zone DEFAULT %s NOT NULL; (params [datetime.datetime(2017, 12, 14, 4, 34, 55, 99027, tzinfo=<UTC>)])
+[2017-12-13 23:34:55] DEBUG [django.db.backends:111] (0.130) ALTER TABLE "oauth2_provider_grant" ADD COLUMN "updated" timestamp with time zone DEFAULT '2017-12-14T04:34:55.099027+00:00'::timestamptz NOT NULL; args=[datetime.datetime(2017, 12, 14, 4, 34, 55, 99027, tzinfo=<UTC>)]
+[2017-12-13 23:34:55] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_grant" ALTER COLUMN "updated" DROP DEFAULT; (params [])
+[2017-12-13 23:34:55] DEBUG [django.db.backends:111] (0.118) ALTER TABLE "oauth2_provider_grant" ALTER COLUMN "updated" DROP DEFAULT; args=[]
+[2017-12-13 23:34:55] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_refreshtoken" ADD COLUMN "created" timestamp with time zone DEFAULT %s NOT NULL; (params [datetime.datetime(2017, 12, 14, 4, 34, 55, 359288, tzinfo=<UTC>)])
+[2017-12-13 23:34:55] DEBUG [django.db.backends:111] (0.132) ALTER TABLE "oauth2_provider_refreshtoken" ADD COLUMN "created" timestamp with time zone DEFAULT '2017-12-14T04:34:55.359288+00:00'::timestamptz NOT NULL; args=[datetime.datetime(2017, 12, 14, 4, 34, 55, 359288, tzinfo=<UTC>)]
+[2017-12-13 23:34:55] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_refreshtoken" ALTER COLUMN "created" DROP DEFAULT; (params [])
+[2017-12-13 23:34:55] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_refreshtoken" ALTER COLUMN "created" DROP DEFAULT; args=[]
+[2017-12-13 23:34:55] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_refreshtoken" ADD COLUMN "updated" timestamp with time zone DEFAULT %s NOT NULL; (params [datetime.datetime(2017, 12, 14, 4, 34, 55, 649902, tzinfo=<UTC>)])
+[2017-12-13 23:34:55] DEBUG [django.db.backends:111] (0.129) ALTER TABLE "oauth2_provider_refreshtoken" ADD COLUMN "updated" timestamp with time zone DEFAULT '2017-12-14T04:34:55.649902+00:00'::timestamptz NOT NULL; args=[datetime.datetime(2017, 12, 14, 4, 34, 55, 649902, tzinfo=<UTC>)]
+[2017-12-13 23:34:55] DEBUG [django.db.backends.schema:108] ALTER TABLE "oauth2_provider_refreshtoken" ALTER COLUMN "updated" DROP DEFAULT; (params [])
+[2017-12-13 23:34:55] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "oauth2_provider_refreshtoken" ALTER COLUMN "updated" DROP DEFAULT; args=[]
+[2017-12-13 23:34:56] DEBUG [django.db.backends:111] (0.117) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:56] DEBUG [django.db.backends:111] (0.231) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('oauth2_provider', '0005_auto_20170514_1141', '2017-12-14T04:34:56.166693+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('oauth2_provider', '0005_auto_20170514_1141', datetime.datetime(2017, 12, 14, 4, 34, 56, 166693, tzinfo=<UTC>))
+[2017-12-13 23:34:56] DEBUG [django.db.backends.schema:108] CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" timestamp with time zone NOT NULL); (params None)
+[2017-12-13 23:34:56] DEBUG [django.db.backends:111] (0.237) CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" timestamp with time zone NOT NULL); args=None
+[2017-12-13 23:34:56] DEBUG [django.db.backends.schema:108] CREATE INDEX "django_session_session_key_c0390e0f_like" ON "django_session" ("session_key" varchar_pattern_ops); (params ())
+[2017-12-13 23:34:56] DEBUG [django.db.backends:111] (0.122) CREATE INDEX "django_session_session_key_c0390e0f_like" ON "django_session" ("session_key" varchar_pattern_ops); args=()
+[2017-12-13 23:34:56] DEBUG [django.db.backends.schema:108] CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); (params ())
+[2017-12-13 23:34:57] DEBUG [django.db.backends:111] (0.122) CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); args=()
+[2017-12-13 23:34:57] DEBUG [django.db.backends:111] (0.120) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:57] DEBUG [django.db.backends:111] (0.242) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('sessions', '0001_initial', '2017-12-14T04:34:57.250698+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('sessions', '0001_initial', datetime.datetime(2017, 12, 14, 4, 34, 57, 250698, tzinfo=<UTC>))
+[2017-12-13 23:34:57] DEBUG [django.db.backends.schema:108] CREATE TABLE "social_auth_association" ("id" serial NOT NULL PRIMARY KEY, "server_url" varchar(255) NOT NULL, "handle" varchar(255) NOT NULL, "secret" varchar(255) NOT NULL, "issued" integer NOT NULL, "lifetime" integer NOT NULL, "assoc_type" varchar(64) NOT NULL); (params None)
+[2017-12-13 23:34:57] DEBUG [django.db.backends:111] (0.263) CREATE TABLE "social_auth_association" ("id" serial NOT NULL PRIMARY KEY, "server_url" varchar(255) NOT NULL, "handle" varchar(255) NOT NULL, "secret" varchar(255) NOT NULL, "issued" integer NOT NULL, "lifetime" integer NOT NULL, "assoc_type" varchar(64) NOT NULL); args=None
+[2017-12-13 23:34:57] DEBUG [django.db.backends.schema:108] CREATE TABLE "social_auth_code" ("id" serial NOT NULL PRIMARY KEY, "email" varchar(75) NOT NULL, "code" varchar(32) NOT NULL, "verified" boolean NOT NULL); (params None)
+[2017-12-13 23:34:58] DEBUG [django.db.backends:111] (0.127) CREATE TABLE "social_auth_code" ("id" serial NOT NULL PRIMARY KEY, "email" varchar(75) NOT NULL, "code" varchar(32) NOT NULL, "verified" boolean NOT NULL); args=None
+[2017-12-13 23:34:58] DEBUG [django.db.backends.schema:108] CREATE TABLE "social_auth_nonce" ("id" serial NOT NULL PRIMARY KEY, "server_url" varchar(255) NOT NULL, "timestamp" integer NOT NULL, "salt" varchar(65) NOT NULL); (params None)
+[2017-12-13 23:34:58] DEBUG [django.db.backends:111] (0.122) CREATE TABLE "social_auth_nonce" ("id" serial NOT NULL PRIMARY KEY, "server_url" varchar(255) NOT NULL, "timestamp" integer NOT NULL, "salt" varchar(65) NOT NULL); args=None
+[2017-12-13 23:34:58] DEBUG [django.db.backends.schema:108] CREATE TABLE "social_auth_usersocialauth" ("id" serial NOT NULL PRIMARY KEY, "provider" varchar(32) NOT NULL, "uid" varchar(255) NOT NULL, "extra_data" text NOT NULL, "user_id" integer NOT NULL); (params None)
+[2017-12-13 23:34:58] DEBUG [django.db.backends:111] (0.128) CREATE TABLE "social_auth_usersocialauth" ("id" serial NOT NULL PRIMARY KEY, "provider" varchar(32) NOT NULL, "uid" varchar(255) NOT NULL, "extra_data" text NOT NULL, "user_id" integer NOT NULL); args=None
+[2017-12-13 23:34:58] DEBUG [django.db.backends.schema:108] ALTER TABLE "social_auth_usersocialauth" ADD CONSTRAINT social_auth_usersocialauth_provider_uid_e6b5e668_uniq UNIQUE ("provider", "uid"); (params ())
+[2017-12-13 23:34:58] DEBUG [django.db.backends:111] (0.121) ALTER TABLE "social_auth_usersocialauth" ADD CONSTRAINT social_auth_usersocialauth_provider_uid_e6b5e668_uniq UNIQUE ("provider", "uid"); args=()
+[2017-12-13 23:34:58] DEBUG [django.db.backends.schema:108] ALTER TABLE "social_auth_code" ADD CONSTRAINT social_auth_code_email_code_801b2d02_uniq UNIQUE ("email", "code"); (params ())
+[2017-12-13 23:34:58] DEBUG [django.db.backends:111] (0.118) ALTER TABLE "social_auth_code" ADD CONSTRAINT social_auth_code_email_code_801b2d02_uniq UNIQUE ("email", "code"); args=()
+[2017-12-13 23:34:58] DEBUG [django.db.backends.schema:108] ALTER TABLE "social_auth_nonce" ADD CONSTRAINT social_auth_nonce_server_url_timestamp_salt_f6284463_uniq UNIQUE ("server_url", "timestamp", "salt"); (params ())
+[2017-12-13 23:34:58] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "social_auth_nonce" ADD CONSTRAINT social_auth_nonce_server_url_timestamp_salt_f6284463_uniq UNIQUE ("server_url", "timestamp", "salt"); args=()
+[2017-12-13 23:34:58] DEBUG [django.db.backends.schema:108] CREATE INDEX "social_auth_code_code_a2393167" ON "social_auth_code" ("code"); (params ())
+[2017-12-13 23:34:58] DEBUG [django.db.backends:111] (0.118) CREATE INDEX "social_auth_code_code_a2393167" ON "social_auth_code" ("code"); args=()
+[2017-12-13 23:34:58] DEBUG [django.db.backends.schema:108] CREATE INDEX "social_auth_code_code_a2393167_like" ON "social_auth_code" ("code" varchar_pattern_ops); (params ())
+[2017-12-13 23:34:58] DEBUG [django.db.backends:111] (0.117) CREATE INDEX "social_auth_code_code_a2393167_like" ON "social_auth_code" ("code" varchar_pattern_ops); args=()
+[2017-12-13 23:34:58] DEBUG [django.db.backends.schema:108] ALTER TABLE "social_auth_usersocialauth" ADD CONSTRAINT "social_auth_usersocialauth_user_id_17d28448_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:34:59] DEBUG [django.db.backends:111] (0.117) ALTER TABLE "social_auth_usersocialauth" ADD CONSTRAINT "social_auth_usersocialauth_user_id_17d28448_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:34:59] DEBUG [django.db.backends.schema:108] CREATE INDEX "social_auth_usersocialauth_user_id_17d28448" ON "social_auth_usersocialauth" ("user_id"); (params ())
+[2017-12-13 23:34:59] DEBUG [django.db.backends:111] (0.124) CREATE INDEX "social_auth_usersocialauth_user_id_17d28448" ON "social_auth_usersocialauth" ("user_id"); args=()
+[2017-12-13 23:34:59] DEBUG [django.db.backends:111] (0.117) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:34:59] DEBUG [django.db.backends:111] (0.231) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('default', '0001_initial', '2017-12-14T04:34:59.408543+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('default', '0001_initial', datetime.datetime(2017, 12, 14, 4, 34, 59, 408543, tzinfo=<UTC>))
+[2017-12-13 23:34:59] DEBUG [django.db.backends:111] (0.116) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:00] DEBUG [django.db.backends:111] (0.233) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('social_auth', '0001_initial', '2017-12-14T04:34:59.873382+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('social_auth', '0001_initial', datetime.datetime(2017, 12, 14, 4, 34, 59, 873382, tzinfo=<UTC>))
+[2017-12-13 23:35:00] DEBUG [django.db.backends:111] (0.239) 
+            SELECT
+                c.conname,
+                array(
+                    SELECT attname
+                    FROM (
+                        SELECT unnest(c.conkey) AS colid,
+                               generate_series(1, array_length(c.conkey, 1)) AS arridx
+                    ) AS cols
+                    JOIN pg_attribute AS ca ON cols.colid = ca.attnum
+                    WHERE ca.attrelid = c.conrelid
+                    ORDER BY cols.arridx
+                ),
+                c.contype,
+                (SELECT fkc.relname || '.' || fka.attname
+                FROM pg_attribute AS fka
+                JOIN pg_class AS fkc ON fka.attrelid = fkc.oid
+                WHERE fka.attrelid = c.confrelid AND fka.attnum = c.confkey[1]),
+                cl.reloptions
+            FROM pg_constraint AS c
+            JOIN pg_class AS cl ON c.conrelid = cl.oid
+            JOIN pg_namespace AS ns ON cl.relnamespace = ns.oid
+            WHERE ns.nspname = 'public' AND cl.relname = 'social_auth_usersocialauth'
+        ; args=['public', 'social_auth_usersocialauth']
+[2017-12-13 23:35:00] DEBUG [django.db.backends:111] (0.120) 
+            SELECT
+                indexname, array_agg(attname ORDER BY rnum), indisunique, indisprimary,
+                array_agg(ordering ORDER BY rnum), amname, exprdef, s2.attoptions
+            FROM (
+                SELECT
+                    row_number() OVER () as rnum, c2.relname as indexname,
+                    idx.*, attr.attname, am.amname,
+                    CASE
+                        WHEN idx.indexprs IS NOT NULL THEN
+                            pg_get_indexdef(idx.indexrelid)
+                    END AS exprdef,
+                    CASE am.amname
+                        WHEN 'btree' THEN
+                            CASE (option & 1)
+                                WHEN 1 THEN 'DESC' ELSE 'ASC'
+                            END
+                    END as ordering,
+                    c2.reloptions as attoptions
+                FROM (
+                    SELECT
+                        *, unnest(i.indkey) as key, unnest(i.indoption) as option
+                    FROM pg_index i
+                ) idx
+                LEFT JOIN pg_class c ON idx.indrelid = c.oid
+                LEFT JOIN pg_class c2 ON idx.indexrelid = c2.oid
+                LEFT JOIN pg_am am ON c2.relam = am.oid
+                LEFT JOIN pg_attribute attr ON attr.attrelid = c.oid AND attr.attnum = idx.key
+                WHERE c.relname = 'social_auth_usersocialauth'
+            ) s2
+            GROUP BY indexname, indisunique, indisprimary, amname, exprdef, attoptions;
+        ; args=['social_auth_usersocialauth']
+[2017-12-13 23:35:00] DEBUG [django.db.backends.schema:108] SET CONSTRAINTS "social_auth_usersocialauth_user_id_17d28448_fk_core_user_id" IMMEDIATE; ALTER TABLE "social_auth_usersocialauth" DROP CONSTRAINT "social_auth_usersocialauth_user_id_17d28448_fk_core_user_id"; (params ())
+[2017-12-13 23:35:00] DEBUG [django.db.backends:111] (0.116) SET CONSTRAINTS "social_auth_usersocialauth_user_id_17d28448_fk_core_user_id" IMMEDIATE; ALTER TABLE "social_auth_usersocialauth" DROP CONSTRAINT "social_auth_usersocialauth_user_id_17d28448_fk_core_user_id"; args=()
+[2017-12-13 23:35:00] DEBUG [django.db.backends.schema:108] ALTER TABLE "social_auth_usersocialauth" ADD CONSTRAINT "social_auth_usersocialauth_user_id_17d28448_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+[2017-12-13 23:35:00] DEBUG [django.db.backends:111] (0.115) ALTER TABLE "social_auth_usersocialauth" ADD CONSTRAINT "social_auth_usersocialauth_user_id_17d28448_fk_core_user_id" FOREIGN KEY ("user_id") REFERENCES "core_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+[2017-12-13 23:35:01] DEBUG [django.db.backends:111] (0.120) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:01] DEBUG [django.db.backends:111] (0.233) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('default', '0002_add_related_name', '2017-12-14T04:35:01.106656+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('default', '0002_add_related_name', datetime.datetime(2017, 12, 14, 4, 35, 1, 106656, tzinfo=<UTC>))
+[2017-12-13 23:35:01] DEBUG [django.db.backends:111] (0.116) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:01] DEBUG [django.db.backends:111] (0.243) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('social_auth', '0002_add_related_name', '2017-12-14T04:35:01.573658+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('social_auth', '0002_add_related_name', datetime.datetime(2017, 12, 14, 4, 35, 1, 573658, tzinfo=<UTC>))
+[2017-12-13 23:35:01] DEBUG [django.db.backends.schema:108] ALTER TABLE "social_auth_code" ALTER COLUMN "email" TYPE varchar(254) USING "email"::varchar(254); (params [])
+[2017-12-13 23:35:02] DEBUG [django.db.backends:111] (0.236) ALTER TABLE "social_auth_code" ALTER COLUMN "email" TYPE varchar(254) USING "email"::varchar(254); args=[]
+[2017-12-13 23:35:02] DEBUG [django.db.backends:111] (0.117) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:02] DEBUG [django.db.backends:111] (0.231) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('default', '0003_alter_email_max_length', '2017-12-14T04:35:02.414702+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('default', '0003_alter_email_max_length', datetime.datetime(2017, 12, 14, 4, 35, 2, 414702, tzinfo=<UTC>))
+[2017-12-13 23:35:02] DEBUG [django.db.backends:111] (0.115) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:03] DEBUG [django.db.backends:111] (0.233) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('social_auth', '0003_alter_email_max_length', '2017-12-14T04:35:02.878362+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('social_auth', '0003_alter_email_max_length', datetime.datetime(2017, 12, 14, 4, 35, 2, 878362, tzinfo=<UTC>))
+[2017-12-13 23:35:03] DEBUG [django.db.backends:111] (0.117) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:03] DEBUG [django.db.backends:111] (0.227) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('default', '0004_auto_20160423_0400', '2017-12-14T04:35:03.386156+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('default', '0004_auto_20160423_0400', datetime.datetime(2017, 12, 14, 4, 35, 3, 386156, tzinfo=<UTC>))
+[2017-12-13 23:35:03] DEBUG [django.db.backends:111] (0.116) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:04] DEBUG [django.db.backends:111] (0.226) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('social_auth', '0004_auto_20160423_0400', '2017-12-14T04:35:03.845455+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('social_auth', '0004_auto_20160423_0400', datetime.datetime(2017, 12, 14, 4, 35, 3, 845455, tzinfo=<UTC>))
+[2017-12-13 23:35:04] DEBUG [django.db.backends.schema:108] ALTER TABLE "social_auth_association" ADD CONSTRAINT social_auth_association_server_url_handle_078befa2_uniq UNIQUE ("server_url", "handle"); (params ())
+[2017-12-13 23:35:04] DEBUG [django.db.backends:111] (0.234) ALTER TABLE "social_auth_association" ADD CONSTRAINT social_auth_association_server_url_handle_078befa2_uniq UNIQUE ("server_url", "handle"); args=()
+[2017-12-13 23:35:04] DEBUG [django.db.backends:111] (0.115) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:04] DEBUG [django.db.backends:111] (0.228) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('social_auth', '0005_auto_20160727_2333', '2017-12-14T04:35:04.666435+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('social_auth', '0005_auto_20160727_2333', datetime.datetime(2017, 12, 14, 4, 35, 4, 666435, tzinfo=<UTC>))
+[2017-12-13 23:35:05] DEBUG [django.db.backends.schema:108] CREATE TABLE "social_auth_partial" ("id" serial NOT NULL PRIMARY KEY, "token" varchar(32) NOT NULL, "next_step" smallint NOT NULL CHECK ("next_step" >= 0), "backend" varchar(32) NOT NULL, "data" text NOT NULL); (params None)
+[2017-12-13 23:35:05] DEBUG [django.db.backends:111] (0.235) CREATE TABLE "social_auth_partial" ("id" serial NOT NULL PRIMARY KEY, "token" varchar(32) NOT NULL, "next_step" smallint NOT NULL CHECK ("next_step" >= 0), "backend" varchar(32) NOT NULL, "data" text NOT NULL); args=None
+[2017-12-13 23:35:05] DEBUG [django.db.backends.schema:108] CREATE INDEX "social_auth_partial_token_3017fea3" ON "social_auth_partial" ("token"); (params ())
+[2017-12-13 23:35:05] DEBUG [django.db.backends:111] (0.137) CREATE INDEX "social_auth_partial_token_3017fea3" ON "social_auth_partial" ("token"); args=()
+[2017-12-13 23:35:05] DEBUG [django.db.backends.schema:108] CREATE INDEX "social_auth_partial_token_3017fea3_like" ON "social_auth_partial" ("token" varchar_pattern_ops); (params ())
+[2017-12-13 23:35:05] DEBUG [django.db.backends:111] (0.117) CREATE INDEX "social_auth_partial_token_3017fea3_like" ON "social_auth_partial" ("token" varchar_pattern_ops); args=()
+[2017-12-13 23:35:05] DEBUG [django.db.backends:111] (0.116) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:05] DEBUG [django.db.backends:111] (0.235) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('social_django', '0006_partial', '2017-12-14T04:35:05.744705+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('social_django', '0006_partial', datetime.datetime(2017, 12, 14, 4, 35, 5, 744705, tzinfo=<UTC>))
+[2017-12-13 23:35:06] DEBUG [django.db.backends.schema:108] ALTER TABLE "social_auth_code" ADD COLUMN "timestamp" timestamp with time zone DEFAULT %s NOT NULL; (params [datetime.datetime(2017, 12, 14, 4, 35, 6, 101738, tzinfo=<UTC>)])
+[2017-12-13 23:35:06] DEBUG [django.db.backends:111] (0.243) ALTER TABLE "social_auth_code" ADD COLUMN "timestamp" timestamp with time zone DEFAULT '2017-12-14T04:35:06.101738+00:00'::timestamptz NOT NULL; args=[datetime.datetime(2017, 12, 14, 4, 35, 6, 101738, tzinfo=<UTC>)]
+[2017-12-13 23:35:06] DEBUG [django.db.backends.schema:108] ALTER TABLE "social_auth_code" ALTER COLUMN "timestamp" DROP DEFAULT; (params [])
+[2017-12-13 23:35:06] DEBUG [django.db.backends:111] (0.117) ALTER TABLE "social_auth_code" ALTER COLUMN "timestamp" DROP DEFAULT; args=[]
+[2017-12-13 23:35:06] DEBUG [django.db.backends.schema:108] CREATE INDEX "social_auth_code_timestamp_176b341f" ON "social_auth_code" ("timestamp"); (params ())
+[2017-12-13 23:35:06] DEBUG [django.db.backends:111] (0.116) CREATE INDEX "social_auth_code_timestamp_176b341f" ON "social_auth_code" ("timestamp"); args=()
+[2017-12-13 23:35:06] DEBUG [django.db.backends:111] (0.115) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:07] DEBUG [django.db.backends:111] (0.228) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('social_django', '0007_code_timestamp', '2017-12-14T04:35:06.816451+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('social_django', '0007_code_timestamp', datetime.datetime(2017, 12, 14, 4, 35, 6, 816451, tzinfo=<UTC>))
+[2017-12-13 23:35:07] DEBUG [django.db.backends.schema:108] ALTER TABLE "social_auth_partial" ADD COLUMN "timestamp" timestamp with time zone DEFAULT %s NOT NULL; (params [datetime.datetime(2017, 12, 14, 4, 35, 7, 164029, tzinfo=<UTC>)])
+[2017-12-13 23:35:07] DEBUG [django.db.backends:111] (0.241) ALTER TABLE "social_auth_partial" ADD COLUMN "timestamp" timestamp with time zone DEFAULT '2017-12-14T04:35:07.164029+00:00'::timestamptz NOT NULL; args=[datetime.datetime(2017, 12, 14, 4, 35, 7, 164029, tzinfo=<UTC>)]
+[2017-12-13 23:35:07] DEBUG [django.db.backends.schema:108] ALTER TABLE "social_auth_partial" ALTER COLUMN "timestamp" DROP DEFAULT; (params [])
+[2017-12-13 23:35:07] DEBUG [django.db.backends:111] (0.134) ALTER TABLE "social_auth_partial" ALTER COLUMN "timestamp" DROP DEFAULT; args=[]
+[2017-12-13 23:35:07] DEBUG [django.db.backends.schema:108] CREATE INDEX "social_auth_partial_timestamp_50f2119f" ON "social_auth_partial" ("timestamp"); (params ())
+[2017-12-13 23:35:07] DEBUG [django.db.backends:111] (0.116) CREATE INDEX "social_auth_partial_timestamp_50f2119f" ON "social_auth_partial" ("timestamp"); args=()
+[2017-12-13 23:35:07] DEBUG [django.db.backends:111] (0.117) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:08] DEBUG [django.db.backends:111] (0.227) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('social_django', '0008_partial_timestamp', '2017-12-14T04:35:07.894937+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('social_django', '0008_partial_timestamp', datetime.datetime(2017, 12, 14, 4, 35, 7, 894937, tzinfo=<UTC>))
+[2017-12-13 23:35:08] DEBUG [django.db.backends:111] (0.119) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:08] DEBUG [django.db.backends:111] (0.116) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-12-13 23:35:08] DEBUG [django.db.backends:111] (0.114) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:08] DEBUG [django.db.backends:111] (0.227) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('social_django', '0005_auto_20160727_2333', '2017-12-14T04:35:08.589684+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('social_django', '0005_auto_20160727_2333', datetime.datetime(2017, 12, 14, 4, 35, 8, 589684, tzinfo=<UTC>))
+[2017-12-13 23:35:09] DEBUG [django.db.backends:111] (0.114) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:09] DEBUG [django.db.backends:111] (0.231) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('social_django', '0004_auto_20160423_0400', '2017-12-14T04:35:09.049573+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('social_django', '0004_auto_20160423_0400', datetime.datetime(2017, 12, 14, 4, 35, 9, 49573, tzinfo=<UTC>))
+[2017-12-13 23:35:09] DEBUG [django.db.backends:111] (0.117) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:09] DEBUG [django.db.backends:111] (0.226) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('social_django', '0001_initial', '2017-12-14T04:35:09.512999+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('social_django', '0001_initial', datetime.datetime(2017, 12, 14, 4, 35, 9, 512999, tzinfo=<UTC>))
+[2017-12-13 23:35:09] DEBUG [django.db.backends:111] (0.114) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:10] DEBUG [django.db.backends:111] (0.226) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('social_django', '0002_add_related_name', '2017-12-14T04:35:09.969439+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('social_django', '0002_add_related_name', datetime.datetime(2017, 12, 14, 4, 35, 9, 969439, tzinfo=<UTC>))
+[2017-12-13 23:35:10] DEBUG [django.db.backends:111] (0.116) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:35:10] DEBUG [django.db.backends:111] (0.226) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('social_django', '0003_alter_email_max_length', '2017-12-14T04:35:10.428651+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('social_django', '0003_alter_email_max_length', datetime.datetime(2017, 12, 14, 4, 35, 10, 428651, tzinfo=<UTC>))
+[2017-12-13 23:35:10] DEBUG [django.db.backends:111] (0.115) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+[2017-12-13 23:35:11] DEBUG [django.db.backends:111] (0.114) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+[2017-12-13 23:35:11] DEBUG [django.db.backends:111] (0.230) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('auth', 'permission') RETURNING "django_content_type"."id"; args=('auth', 'permission')
+[2017-12-13 23:35:11] DEBUG [django.db.backends:111] (0.113) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+[2017-12-13 23:35:11] DEBUG [django.db.backends:111] (0.114) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+[2017-12-13 23:35:11] DEBUG [django.db.backends:111] (0.228) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('auth', 'group') RETURNING "django_content_type"."id"; args=('auth', 'group')
+[2017-12-13 23:35:12] DEBUG [django.db.backends:111] (0.114) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1, 2) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1, 2)
+[2017-12-13 23:35:12] DEBUG [django.db.backends:111] (0.229) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add permission', 1, 'add_permission'), ('Can change permission', 1, 'change_permission'), ('Can delete permission', 1, 'delete_permission'), ('Can add group', 2, 'add_group'), ('Can change group', 2, 'change_group'), ('Can delete group', 2, 'delete_group') RETURNING "auth_permission"."id"; args=('Can add permission', 1, 'add_permission', 'Can change permission', 1, 'change_permission', 'Can delete permission', 1, 'delete_permission', 'Can add group', 2, 'add_group', 'Can change group', 2, 'change_group', 'Can delete group', 2, 'delete_group')
+[2017-12-13 23:35:12] DEBUG [django.db.backends:111] (0.132) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+[2017-12-13 23:35:12] DEBUG [django.db.backends:111] (0.115) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+[2017-12-13 23:35:12] DEBUG [django.db.backends:111] (0.114) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+[2017-12-13 23:35:12] DEBUG [django.db.backends:111] (0.227) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('contenttypes', 'contenttype') RETURNING "django_content_type"."id"; args=('contenttypes', 'contenttype')
+[2017-12-13 23:35:13] DEBUG [django.db.backends:111] (0.114) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (3) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(3,)
+[2017-12-13 23:35:13] DEBUG [django.db.backends:111] (0.228) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add content type', 3, 'add_contenttype'), ('Can change content type', 3, 'change_contenttype'), ('Can delete content type', 3, 'delete_contenttype') RETURNING "auth_permission"."id"; args=('Can add content type', 3, 'add_contenttype', 'Can change content type', 3, 'change_contenttype', 'Can delete content type', 3, 'delete_contenttype')
+[2017-12-13 23:35:13] DEBUG [django.db.backends:111] (0.113) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+[2017-12-13 23:35:13] DEBUG [django.db.backends:111] (0.114) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+[2017-12-13 23:35:13] DEBUG [django.db.backends:111] (0.113) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+[2017-12-13 23:35:14] DEBUG [django.db.backends:111] (0.231) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('sessions', 'session') RETURNING "django_content_type"."id"; args=('sessions', 'session')
+[2017-12-13 23:35:14] DEBUG [django.db.backends:111] (0.114) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(4,)
+[2017-12-13 23:35:14] DEBUG [django.db.backends:111] (0.229) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add session', 4, 'add_session'), ('Can change session', 4, 'change_session'), ('Can delete session', 4, 'delete_session') RETURNING "auth_permission"."id"; args=('Can add session', 4, 'add_session', 'Can change session', 4, 'change_session', 'Can delete session', 4, 'delete_session')
+[2017-12-13 23:35:14] DEBUG [django.db.backends:111] (0.113) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+[2017-12-13 23:35:14] DEBUG [django.db.backends:111] (0.114) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'social_django' AND "django_content_type"."model" = 'association'); args=('social_django', 'association')
+[2017-12-13 23:35:15] DEBUG [django.db.backends:111] (0.124) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'social_django' AND "django_content_type"."model" = 'association'); args=('social_django', 'association')
+[2017-12-13 23:35:15] DEBUG [django.db.backends:111] (0.230) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('social_django', 'association') RETURNING "django_content_type"."id"; args=('social_django', 'association')
+[2017-12-13 23:35:15] DEBUG [django.db.backends:111] (0.113) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'social_django' AND "django_content_type"."model" = 'code'); args=('social_django', 'code')
+[2017-12-13 23:35:15] DEBUG [django.db.backends:111] (0.113) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'social_django' AND "django_content_type"."model" = 'code'); args=('social_django', 'code')
+[2017-12-13 23:35:15] DEBUG [django.db.backends:111] (0.228) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('social_django', 'code') RETURNING "django_content_type"."id"; args=('social_django', 'code')
+[2017-12-13 23:35:16] DEBUG [django.db.backends:111] (0.114) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'social_django' AND "django_content_type"."model" = 'nonce'); args=('social_django', 'nonce')
+[2017-12-13 23:35:16] DEBUG [django.db.backends:111] (0.116) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'social_django' AND "django_content_type"."model" = 'nonce'); args=('social_django', 'nonce')
+[2017-12-13 23:35:16] DEBUG [django.db.backends:111] (0.226) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('social_django', 'nonce') RETURNING "django_content_type"."id"; args=('social_django', 'nonce')
+[2017-12-13 23:35:16] DEBUG [django.db.backends:111] (0.114) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'social_django' AND "django_content_type"."model" = 'usersocialauth'); args=('social_django', 'usersocialauth')
+[2017-12-13 23:35:16] DEBUG [django.db.backends:111] (0.113) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'social_django' AND "django_content_type"."model" = 'usersocialauth'); args=('social_django', 'usersocialauth')
+[2017-12-13 23:35:17] DEBUG [django.db.backends:111] (0.226) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('social_django', 'usersocialauth') RETURNING "django_content_type"."id"; args=('social_django', 'usersocialauth')
+[2017-12-13 23:35:17] DEBUG [django.db.backends:111] (0.113) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'social_django' AND "django_content_type"."model" = 'partial'); args=('social_django', 'partial')
+[2017-12-13 23:35:17] DEBUG [django.db.backends:111] (0.114) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'social_django' AND "django_content_type"."model" = 'partial'); args=('social_django', 'partial')
+[2017-12-13 23:35:17] DEBUG [django.db.backends:111] (0.246) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('social_django', 'partial') RETURNING "django_content_type"."id"; args=('social_django', 'partial')
+[2017-12-13 23:35:17] DEBUG [django.db.backends:111] (0.114) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5, 6, 7, 8, 9) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5, 6, 7, 8, 9)
+[2017-12-13 23:35:18] DEBUG [django.db.backends:111] (0.229) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add association', 5, 'add_association'), ('Can change association', 5, 'change_association'), ('Can delete association', 5, 'delete_association'), ('Can add code', 6, 'add_code'), ('Can change code', 6, 'change_code'), ('Can delete code', 6, 'delete_code'), ('Can add nonce', 7, 'add_nonce'), ('Can change nonce', 7, 'change_nonce'), ('Can delete nonce', 7, 'delete_nonce'), ('Can add user social auth', 8, 'add_usersocialauth'), ('Can change user social auth', 8, 'change_usersocialauth'), ('Can delete user social auth', 8, 'delete_usersocialauth'), ('Can add partial', 9, 'add_partial'), ('Can change partial', 9, 'change_partial'), ('Can delete partial', 9, 'delete_partial') RETURNING "auth_permission"."id"; args=('Can add association', 5, 'add_association', 'Can change association', 5, 'change_association', 'Can delete association', 5, 'delete_association', 'Can add code', 6, 'add_code', 'Can change code', 6, 'change_code', 'Can delete code', 6, 'delete_code', 'Can add nonce', 7, 'add_nonce', 'Can change nonce', 7, 'change_nonce', 'Can delete nonce', 7, 'delete_nonce', 'Can add user social auth', 8, 'add_usersocialauth', 'Can change user social auth', 8, 'change_usersocialauth', 'Can delete user social auth', 8, 'delete_usersocialauth', 'Can add partial', 9, 'add_partial', 'Can change partial', 9, 'change_partial', 'Can delete partial', 9, 'delete_partial')
+[2017-12-13 23:35:18] DEBUG [django.db.backends:111] (0.115) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'social_django'; args=('social_django',)
+[2017-12-13 23:35:18] DEBUG [django.db.backends:111] (0.114) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'core' AND "django_content_type"."model" = 'user'); args=('core', 'user')
+[2017-12-13 23:35:18] DEBUG [django.db.backends:111] (0.114) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'core' AND "django_content_type"."model" = 'user'); args=('core', 'user')
+[2017-12-13 23:35:18] DEBUG [django.db.backends:111] (0.234) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('core', 'user') RETURNING "django_content_type"."id"; args=('core', 'user')
+[2017-12-13 23:35:19] DEBUG [django.db.backends:111] (0.114) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'core' AND "django_content_type"."model" = 'person'); args=('core', 'person')
+[2017-12-13 23:35:19] DEBUG [django.db.backends:111] (0.116) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'core' AND "django_content_type"."model" = 'person'); args=('core', 'person')
+[2017-12-13 23:35:19] DEBUG [django.db.backends:111] (0.230) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('core', 'person') RETURNING "django_content_type"."id"; args=('core', 'person')
+[2017-12-13 23:35:19] DEBUG [django.db.backends:111] (0.116) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (10, 11) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(10, 11)
+[2017-12-13 23:35:19] DEBUG [django.db.backends:111] (0.230) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add User', 10, 'add_user'), ('Can change User', 10, 'change_user'), ('Can delete User', 10, 'delete_user'), ('Can add Person', 11, 'add_person'), ('Can change Person', 11, 'change_person'), ('Can delete Person', 11, 'delete_person') RETURNING "auth_permission"."id"; args=('Can add User', 10, 'add_user', 'Can change User', 10, 'change_user', 'Can delete User', 10, 'delete_user', 'Can add Person', 11, 'add_person', 'Can change Person', 11, 'change_person', 'Can delete Person', 11, 'delete_person')
+[2017-12-13 23:35:20] DEBUG [django.db.backends:111] (0.115) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'core'; args=('core',)
+[2017-12-13 23:35:20] DEBUG [django.db.backends:111] (0.117) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'accounts'; args=('accounts',)
+[2017-12-13 23:35:20] DEBUG [django.db.backends:111] (0.114) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+[2017-12-13 23:35:20] DEBUG [django.db.backends:111] (0.117) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+[2017-12-13 23:35:20] DEBUG [django.db.backends:111] (0.237) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('admin', 'logentry') RETURNING "django_content_type"."id"; args=('admin', 'logentry')
+[2017-12-13 23:35:20] DEBUG [django.db.backends:111] (0.117) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (12) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(12,)
+[2017-12-13 23:35:21] DEBUG [django.db.backends:111] (0.228) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add log entry', 12, 'add_logentry'), ('Can change log entry', 12, 'change_logentry'), ('Can delete log entry', 12, 'delete_logentry') RETURNING "auth_permission"."id"; args=('Can add log entry', 12, 'add_logentry', 'Can change log entry', 12, 'change_logentry', 'Can delete log entry', 12, 'delete_logentry')
+[2017-12-13 23:35:21] DEBUG [django.db.backends:111] (0.113) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+[2017-12-13 23:35:21] DEBUG [django.db.backends:111] (0.113) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'bootstrap3'; args=('bootstrap3',)
+[2017-12-13 23:35:21] DEBUG [django.db.backends:111] (0.113) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'oauth2_provider' AND "django_content_type"."model" = 'application'); args=('oauth2_provider', 'application')
+[2017-12-13 23:35:21] DEBUG [django.db.backends:111] (0.121) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'oauth2_provider' AND "django_content_type"."model" = 'application'); args=('oauth2_provider', 'application')
+[2017-12-13 23:35:22] DEBUG [django.db.backends:111] (0.557) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('oauth2_provider', 'application') RETURNING "django_content_type"."id"; args=('oauth2_provider', 'application')
+[2017-12-13 23:35:22] DEBUG [django.db.backends:111] (0.114) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'oauth2_provider' AND "django_content_type"."model" = 'accesstoken'); args=('oauth2_provider', 'accesstoken')
+[2017-12-13 23:35:22] DEBUG [django.db.backends:111] (0.113) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'oauth2_provider' AND "django_content_type"."model" = 'accesstoken'); args=('oauth2_provider', 'accesstoken')
+[2017-12-13 23:35:22] DEBUG [django.db.backends:111] (0.244) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('oauth2_provider', 'accesstoken') RETURNING "django_content_type"."id"; args=('oauth2_provider', 'accesstoken')
+[2017-12-13 23:35:23] DEBUG [django.db.backends:111] (0.117) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'oauth2_provider' AND "django_content_type"."model" = 'grant'); args=('oauth2_provider', 'grant')
+[2017-12-13 23:35:23] DEBUG [django.db.backends:111] (0.116) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'oauth2_provider' AND "django_content_type"."model" = 'grant'); args=('oauth2_provider', 'grant')
+[2017-12-13 23:35:23] DEBUG [django.db.backends:111] (0.227) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('oauth2_provider', 'grant') RETURNING "django_content_type"."id"; args=('oauth2_provider', 'grant')
+[2017-12-13 23:35:23] DEBUG [django.db.backends:111] (0.116) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'oauth2_provider' AND "django_content_type"."model" = 'refreshtoken'); args=('oauth2_provider', 'refreshtoken')
+[2017-12-13 23:35:23] DEBUG [django.db.backends:111] (0.117) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'oauth2_provider' AND "django_content_type"."model" = 'refreshtoken'); args=('oauth2_provider', 'refreshtoken')
+[2017-12-13 23:35:24] DEBUG [django.db.backends:111] (0.229) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('oauth2_provider', 'refreshtoken') RETURNING "django_content_type"."id"; args=('oauth2_provider', 'refreshtoken')
+[2017-12-13 23:35:24] DEBUG [django.db.backends:111] (0.116) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (16, 13, 14, 15) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(16, 13, 14, 15)
+[2017-12-13 23:35:24] DEBUG [django.db.backends:111] (0.230) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add application', 13, 'add_application'), ('Can change application', 13, 'change_application'), ('Can delete application', 13, 'delete_application'), ('Can add access token', 14, 'add_accesstoken'), ('Can change access token', 14, 'change_accesstoken'), ('Can delete access token', 14, 'delete_accesstoken'), ('Can add grant', 15, 'add_grant'), ('Can change grant', 15, 'change_grant'), ('Can delete grant', 15, 'delete_grant'), ('Can add refresh token', 16, 'add_refreshtoken'), ('Can change refresh token', 16, 'change_refreshtoken'), ('Can delete refresh token', 16, 'delete_refreshtoken') RETURNING "auth_permission"."id"; args=('Can add application', 13, 'add_application', 'Can change application', 13, 'change_application', 'Can delete application', 13, 'delete_application', 'Can add access token', 14, 'add_accesstoken', 'Can change access token', 14, 'change_accesstoken', 'Can delete access token', 14, 'delete_accesstoken', 'Can add grant', 15, 'add_grant', 'Can change grant', 15, 'change_grant', 'Can delete grant', 15, 'delete_grant', 'Can add refresh token', 16, 'add_refreshtoken', 'Can change refresh token', 16, 'change_refreshtoken', 'Can delete refresh token', 16, 'delete_refreshtoken')
+[2017-12-13 23:35:24] DEBUG [django.db.backends:111] (0.113) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'oauth2_provider'; args=('oauth2_provider',)
+[2017-12-13 23:35:24] DEBUG [django.db.backends:111] (0.116) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'rest_framework'; args=('rest_framework',)
+[2017-12-13 23:35:24] DEBUG [django.db.backends:111] (0.118) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'corsheaders'; args=('corsheaders',)
+[2017-12-13 23:40:57] DEBUG [django.db.backends:111] (0.116) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+[2017-12-13 23:40:57] DEBUG [django.db.backends:111] (0.116) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-12-13 23:41:01] DEBUG [django.db.backends:111] (0.116) SELECT "core_user"."id", "core_user"."password", "core_user"."last_login", "core_user"."is_superuser", "core_user"."username", "core_user"."first_name", "core_user"."last_name", "core_user"."email", "core_user"."is_staff", "core_user"."is_active", "core_user"."date_joined", "core_user"."detalle", "core_user"."person_id" FROM "core_user" WHERE "core_user"."username" = 'admin'; args=('admin',)
+[2017-12-13 23:41:15] DEBUG [django.db.backends:111] (0.228) INSERT INTO "core_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined", "detalle", "person_id") VALUES ('pbkdf2_sha256$100000$YzUQabu6jLh3$jE6Y6MFO6/ssPS9llxEQAYLHza1C6b5f5JpkJiywzBg=', NULL, true, 'admin', '', '', 'upeu2018pro@gmail.com', true, true, '2017-12-14T04:41:15.072391+00:00'::timestamptz, NULL, NULL) RETURNING "core_user"."id"; args=('pbkdf2_sha256$100000$YzUQabu6jLh3$jE6Y6MFO6/ssPS9llxEQAYLHza1C6b5f5JpkJiywzBg=', None, True, 'admin', '', '', 'upeu2018pro@gmail.com', True, True, datetime.datetime(2017, 12, 14, 4, 41, 15, 72391, tzinfo=<UTC>), None, None)
